@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@keyframes rodapeImagemAnim {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100px;
+    }
+}
+body{
+    padding : 0;
+    margin : 0;
+}
+
+.principal{
+    background-color: #161A1D;
+    width: 1920px;
+    height: 2160px;
+    
+}
+.cabecalho {
+    width:100%;
+    height: 150px;
+
+    background-color: #0B090A;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid #A4161A;
+    display: flex;
+    flex-direction: column;
+    
+}
+.virtualCineTexto {
+    width : 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    
+}
+.virtualCineTexto:hover{
+    font-size: 45px;
+    cursor: pointer;
+      
+}
+
+.fundoGradiente{
+    background-color: #A4161A;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.metadeGradiente{
+    width :45%;
+    height: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    font-size: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.rodape {
+    width:1920px;
+    height: 100px;
+    position: fixed;
+    
+    background-color: #A4161A;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+.rodape:hover{
+    height: 105px;
+}
+
+.containerImagens{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fundoImagens{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+
+}
+
+.cabecalhoImagens{
+    width: 400px;
+    height: 75px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+   
+    color: #660708;
+    
+}
+.descricaoImagens{
+    width: 400px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    font-family: 'Quicksand', sans-serif;
+    
+    color: #660708;
+    
+}
+h{
+    border-bottom: 2px solid #A4161A;
+}
+
+.rodapeImage{
+    width: 400px;
+    height: 50px;
+    background-color: #660708 ;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.rodapePreco{
+    width: 400px;
+    height: 100px;
+    background-color: white ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color:#660708 ;
+    font-size: 30px;
+    display: none;
+    animation-name: rodapeImagemAnim;
+    animation-duration: 1s;
+}
+.rodapeImage:hover + .rodapePreco{
+    display: flex;
+}
+img{
+    
+    display: flex;
+    align-items: center;
+}
+
+
+

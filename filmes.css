@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
 body,html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+
 /* - Fundo principal - */
 .principal {
     
     width: 1920px;
-    height: 1080px;
+    height: 2160px;
     
     background-color: #161A1D;
 }
@@ -58,7 +60,7 @@ body,html {
 /* Caixas organizadoras do filmes */
 
 .caixaContent{
-    width:  2400px;
+    width:  2200px;
     height: 815px;
     /* border-radius: 1px;
     border-color: rgb(255, 0, 0);
@@ -72,7 +74,7 @@ body,html {
 
 .caixaColunas{
     width: 90%;
-    height: 815px;
+    height: 1630px;
     /* border-radius: 1px;
     border-color: green;
     border-style: dotted; */
@@ -106,6 +108,21 @@ body,html {
     justify-content: space-around; 
     align-items: center;  
     flex-direction: row;
+    left: 50px;
+
+}
+.caixaFilmes{
+    width: 100%;
+    height: 500px;
+    /* border-radius: 1px;
+    border-color: red;
+    border-style: dotted; */
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;  
+    flex-direction: row;
+   
+
 }
 
 
@@ -141,12 +158,14 @@ body,html {
     align-items: end;
     z-index: 1;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+
 }
 
 .imgFilme {
     z-index: -1;
     width: 300px;
     height: inherit;
+    
 }
 
 .rodapeFilme{
@@ -201,6 +220,9 @@ body,html {
     font-family: 'Quicksand', sans-serif;
     border: 0px;
     cursor:pointer;
+    z-index: 5;
+    
+   
 }
 
 .setaFrente:hover {background-color: #0b090a7a; }
