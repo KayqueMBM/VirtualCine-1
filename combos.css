@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @keyframes rodapeImagemAnim {
-    0%{
-        height: 0%;
-    }
-    100%{
-        height: 100px;
-    }
+    0%{height: 0%;}
+    100%{height: 100px;}
+}
+
+@keyframes zoom {
+    0%{z-index: 1;}
+
+    100%{z-index:2;clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);}
 }
 body{
     padding : 0;
@@ -124,11 +126,40 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    
     font-family: 'Quicksand', sans-serif;
     
     color: #660708;
     
+}
+
+.divDiagonal{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    clip-path: polygon(0% 0, 100% 0%, 0% 100%, 0 100%);
+    position: absolute;
+    display: flex;
+    transition: 2s;
+    
+
+}
+
+.divDiagonalInv{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    transition: 2s;
+    
+}
+.divDiagonalInv:hover,.divDiagonal:hover{
+    transform: scale(1.01);
+    z-index: 1;
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
 h{
     border-bottom: 2px solid #A4161A;
@@ -138,18 +169,21 @@ h{
     width: 400px;
     height: 50px;
     background-color: #660708 ;
- 
+
+
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     align-items: center;
     color: white;
+    
 
 }
 .rodapePreco{
     width: 400px;
     height: 100px;
     background-color: white ;
+ 
 
     display: flex;
     align-items: center;
@@ -164,11 +198,7 @@ h{
 .rodapeImage:hover + .rodapePreco{
     display: flex;
 }
-img{
-    
-    display: flex;
-    align-items: center;
-}
+
 
 
 
