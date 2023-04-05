@@ -111,17 +111,20 @@ button{
     height: 100px;
     display: flex;
 
-    border:1px solid black;
+    border:1px solid #660708;
     font-size: 25px;
     display: flex;
     
 }
 .respostaConteudo{
-    width: 15%;
+    width: 10%;
     height: 100%;
     display: flex;
     background-color:#A4161A ;
-    border-right: 20px solid white;
+    border-right: 20px solid #660708;
+    border-bottom: 3px solid #660708;
+    margin-right: 10px;
+    
     font-size: 25px;
     color: white;
 }

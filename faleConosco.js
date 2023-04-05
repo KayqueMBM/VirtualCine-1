@@ -34,7 +34,7 @@ function MensagemRecebida(message) {
       
       var divClone = div.cloneNode(true);
       cResposta.appendChild(divClone);
-      divClone.innerHTML += "<br>" + message.payloadString; 
+      divClone.innerHTML = message.payloadString; 
    
 
 }
@@ -47,20 +47,17 @@ function Enviar()
   message = new Paho.MQTT.Message(texto);
   message.destinationName = topico;
   
-  if(texto != "" && count < 6 ){
+  if(texto != "" && count < 5 ){
     client.send(message);
-    
   } else {
     
+    client.send(message);
     
-    var div = document.getElementById("resposta");
-    var divR = document.getElementById("respostaConteudo");
-    div.children[i].innerHTML += "Mensagem Anterior : ";
     cResposta.removeChild(cResposta.children[i]);
-    div.removeChild(div.children[i]);
     
+       
     i++;
-
+   
   }
   
   
