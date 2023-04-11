@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Cine</title>
+    <link rel="stylesheet" href="telaInicial.css">
+    <script language="JavaScript">
+        
+        // função pra ler querystring
+        function queryString(parameter) {  
+              var loc = location.search.substring(1, location.search.length);   
+              var param_value = false;   
+              var params = loc.split("&");   
+              for (i=0; i<params.length;i++) {   
+                  param_name = params[i].substring(0,params[i].indexOf('='));   
+                  if (param_name == parameter) {                                          
+                      param_value = params[i].substring(params[i].indexOf('=')+1)   
+                  }   
+              }   
+              if (param_value) {   
+                  return param_value;   
+              }   
+              else {   
+                  return undefined;   
+              }   
+        }
+        var variavel = queryString("usuario");
+
+        function VerificaBotoes() {
+            if(variavel == undefined){
+                document.getElementById('entrar').style.display = 'inline-block';
+                document.getElementById('cadastro').style.display = 'inline-block';
+            }
+            else{
+                document.getElementById('entrar').style.display = 'none';
+                document.getElementById('cadastro').style.display = 'none';
+            }
+        }
+
+        function telafilme1(){
+            if (variavel == undefined) {
+                alert('Precisa logar-se antes!')
+            }
+            else
+            {
+                window.location.href= 'tela_filme1.html';
+            }
+        }
+        function telafilme2(){
+            if (variavel == undefined) {
+                alert('Precisa logar-se antes!')
+            }
+            else
+            {
+                window.location.href= 'tela_filme2.html';
+            }
+        }
+        function telafilme3(){
+            if (variavel == undefined) {
+                alert('Precisa logar-se antes!')
+            }
+            else
+            {
+                window.location.href= 'tela_filme3.html';
+            }
+        }
+        function telafilme4(){
+            if (variavel == undefined) {
+                alert('Precisa logar-se antes!')
+            }
+            else
+            {
+                window.location.href= 'tela_filme4.html';
+            }
+        }
+
+    </script></head>
+<body onload="VerificaBotoes();">
+    <div class="categorias" id="categorias">
+        <div class = "divTexto">Aventura</div>
+        <div class = "divTexto">Terror</div>
+        <div class = "divTexto">Ação</div>
+        <div class = "divTexto">Romance</div>
+        <div class = "divTexto">Comédia</div>
+        <div class = "divTexto">Drama</div>
+        <div class = "divTexto">Suspense</div>
+        <div class = "divTexto">Documentário</div>
+        <div class = "divTexto">Ficção científica</div>
+        <div class = "divTexto">Fantansia</div>
+        <div class = "divTexto">Animação</div>
+        <div class = "divTexto">Super-herói</div>
+    </div>
+    <div class="destaques" id="destaques" >
+        <div class = "divTexto">Gato de Botas 2</div>
+        <div class = "divTexto">O Esquadrão Suicida 2</div>
+        <div class = "divTexto">Mad Max</div>
+        <div class = "divTexto">Enrolados</div>
+        <div class = "divTexto">Matrix Resurrections</div>
+        <div class = "divTexto">Titanic</div>
+        <div class = "divTexto">Harry Potter</div>
+        <div class = "divTexto">Homem-Aranha</div>
+        <div class = "divTexto">Sausage Party</div>
+    </div>
+    <div class="combos" id="combos">
+        <div class = "divTexto">Burguer e CocaCola</div>
+        <div class = "divTexto">Pastel e caldo de cana</div>
+        <div class = "divTexto">Tacos e churros</div>
+        <div class = "divTexto">Hot Dog e suco</div>
+        <div class = "divTexto">Pizza e Fini</div>
+        <div class = "divTexto">Pipoca e guaraná</div>
+        <div class = "divTexto">Sanduíche e Bibs</div>
+        <div class = "divTexto">Batata frita e fanta</div>
+        <div class = "divTexto">Coxinha e Kitkat</div>
+        <div class = "divTexto">Torta e sorvete</div>
+        <div class = "divTexto">Chips e açaí</div>
+    </div>
+    <div class="perfil" id="perfil">
+        <div>Configurações</div>
+        <div>Histórico</div>
+        <div>Conta</div>
+        <div><a href="fale_conosco.html">Fale Conosco</a></div>
+        <div><a href="animação.html">Sair</a></div>
+    </div>
+    <div class="cabecalho">
+        
+        <table>
+            <tr>
+                <td width="500px" class="virtual"><h1>Virtual Cine</h1></td>
+                <td width="1000px"><h1><span onclick="mostramenucategoria();" class="txt_categoria">Categorias</span> 
+                    <div class="flecha"><</div><span onclick="mostramenudestaque();" class="txt_destaque">Destaques </span> 
+                    <div class="flecha"><</div><span onclick="mostramenucombo();" class="txt_combo">Combos</span> <div class="flecha"><</div></h1></td>
+                <td width="300px">
+                    <div id="divBusca">
+                        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                        <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
+                    </div>
+                </td>
+                <td width="200px">
+                    <a href="#" onclick="mostramenuperfil();"><img src="../img/Perfil.png" width=50px></a>
+                </td>
+            </tr>
+        </table>
+   </div>
+   <div>
+        <table>
+            <tr>
+                <td width="700px">
+                    <table>
+                        <tr>
+                            <td class="titulo">
+                                <p class="piscar" style="color:white;">Um novo jeito de assistir em casa.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                            <a href="entrar.html">
+                                <button class="button button1" id="entrar">   
+                                    Entrar
+                                </button>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="cadastrar-se.html">
+                                <button class="button button2" id="cadastro">
+                                    Cadastrar-se
+                                </button>
+                            </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td><img src="../img/cinema.jpg" width=900px></td>
+            </tr>
+        </table>
+    </div>
+    <div class="rodape">
+        <table>
+            <tr>
+                <td align="center" width="600px">Assista os melhores filmes em 3D</td>
+            </tr>
+        </table>
+    </div>
+    <table width="95%" height="300px">
+        <tr>
+            <td align="right">
+                <div class="img">
+                    <a href="#"><img src="../img/2_Fast_2_Furious_2003.jpg" height=450px onclick="telafilme1();"></a>
+                    <div><img src="../img/3D.png"></div>
+                </div>
+            </td>
+            <td align="right">
+                <div class="img">
+                    <a href="#"><img src="../img/Harry Potter.jpg" height=450px onclick="telafilme2();"></a>
+                    <div><img src="../img/3D.png"></div>
+                </div>
+            </td>
+            <td align="right">
+                <div class="img">
+                    <a href="#"><img src="../img/Carros.jpg" height=450px onclick="telafilme3();"></a>
+                    <div><img src="../img/3D.png"></div>
+                </div>
+           
+            </td>
+            <td align="right">
+                <div class="img">
+                    <a href="#"><img src="../img/Vingadores.jpg" height=450px onclick="telafilme4();"></a>
+                    <div><img src="../img/3D.png"></div>
+                </div>
+        </tr>
+    </table>
+    <div class="d2"><img src="../img/desconto.png" width="200px"></div>
+ </body>
+ <script>
+    c = 0
+    d = 0
+    co = 0
+    p = 0
+    function mostramenucategoria()
+    {
+        c = c + 1 
+
+        if (d==1)  
+        {
+            destaques.classList.add("sobe");
+            d = 0
+        }
+        if (co==1)  
+        {
+            combos.classList.add("sobe");
+            co = 0
+        }
+        if (p==1)  
+        {
+            perfil.classList.add("sobe");
+            p = 0
+        }
+        if (c == 1)
+        {
+            categorias.classList.add("desliza");
+            categorias.classList.remove("sobe");
+        }
+        else{
+            categorias.classList.add("sobe");
+            categorias.classList.remove("desliza");
+            c = 0
+        }
+        
+    }
+    function mostramenudestaque()
+    {
+        d = d + 1 
+
+        if (c==1)  
+        {
+            categorias.classList.add("sobe");
+            c = 0
+        }
+        if (co==1)  
+        {
+            combos.classList.add("sobe");
+            co = 0
+        }
+        if (p==1)  
+        {
+            perfil.classList.add("sobe");
+            p = 0
+        }
+        if (d == 1)
+        {
+            destaques.classList.add("desliza");
+            destaques.classList.remove("sobe");
+        }
+        else{
+            destaques.classList.add("sobe");
+            destaques.classList.remove("desliza");
+            d = 0
+        }
+    }
+    function mostramenucombo()
+    {
+        co = co + 1 
+
+        if (c==1)  
+        {
+            categorias.classList.add("sobe");
+            c = 0
+        }
+        if (d==1)  
+        {
+            destaques.classList.add("sobe");
+            d = 0
+        }
+        if (p==1)  
+        {
+            perfil.classList.add("sobe");
+            p = 0
+        }
+        if (co == 1)
+        {
+            combos.classList.add("desliza");
+            combos.classList.remove("sobe");
+        }
+        else{
+            combos.classList.add("sobe");
+            combos.classList.remove("desliza");
+            co = 0
+        }
+    }
+    function mostramenuperfil()
+    {
+        p = p + 1 
+
+        if (c==1)  
+        {
+            categorias.classList.add("sobe");
+            c = 0
+        }
+        if (d==1)  
+        {
+            destaques.classList.add("sobe");
+            d = 0
+        }
+        if (co == 1)
+        {
+            combos.classList.add("sobe");
+            co = 0
+        }
+        if (p == 1)
+        {
+            perfil.classList.add("desliza");
+            perfil.classList.remove("sobe");
+        }
+        else{
+            perfil.classList.add("sobe");
+            perfil.classList.remove("desliza");
+            p=0
+        }
+    }
+ </script>
+</html>

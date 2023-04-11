@@ -21,6 +21,7 @@ body,html {
     height: 150px;
 
     background-color: #0B090A;
+    border-bottom: 5px solid #A4161A;
     display: flex;
     
     justify-content: space-between;
@@ -32,6 +33,7 @@ body,html {
    
     height: 100%;
     width: 25%;
+
     /* border-radius: 1px;
     border-color: rgba(255, 255, 255, 1);
     border-style: dotted; */
@@ -125,7 +127,9 @@ body,html {
 
 }
 
-
+h{
+    border-bottom: 5px solid #A4161A;
+  }
 
  /* Banners dos filmes */
 .filmes{
