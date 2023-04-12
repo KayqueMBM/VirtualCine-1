@@ -7,7 +7,6 @@
     <title>Virtual Cine</title>
     <link rel="stylesheet" href="telaInicial.css">
     <script language="JavaScript">
-        
         // função pra ler querystring
         function queryString(parameter) {  
               var loc = location.search.substring(1, location.search.length);   
@@ -79,42 +78,42 @@
     </script></head>
 <body onload="VerificaBotoes();">
     <div class="categorias" id="categorias">
-        <div class = "divTexto">Aventura</div>
-        <div class = "divTexto">Terror</div>
-        <div class = "divTexto">Ação</div>
-        <div class = "divTexto">Romance</div>
-        <div class = "divTexto">Comédia</div>
-        <div class = "divTexto">Drama</div>
-        <div class = "divTexto">Suspense</div>
-        <div class = "divTexto">Documentário</div>
-        <div class = "divTexto">Ficção científica</div>
-        <div class = "divTexto">Fantansia</div>
-        <div class = "divTexto">Animação</div>
-        <div class = "divTexto">Super-herói</div>
+        <div>Aventura</div>
+        <div>Terror</div>
+        <div>Ação</div>
+        <div>Romance</div>
+        <div>Comédia</div>
+        <div>Drama</div>
+        <div>Suspense</div>
+        <div>Documentário</div>
+        <div>Ficção científica</div>
+        <div>Fantansia</div>
+        <div>Animação</div>
+        <div>Super-herói</div>
     </div>
     <div class="destaques" id="destaques" >
-        <div class = "divTexto">Gato de Botas 2</div>
-        <div class = "divTexto">O Esquadrão Suicida 2</div>
-        <div class = "divTexto">Mad Max</div>
-        <div class = "divTexto">Enrolados</div>
-        <div class = "divTexto">Matrix Resurrections</div>
-        <div class = "divTexto">Titanic</div>
-        <div class = "divTexto">Harry Potter</div>
-        <div class = "divTexto">Homem-Aranha</div>
-        <div class = "divTexto">Sausage Party</div>
+        <div>Gato de Botas 2</div>
+        <div>O Esquadrão Suicida 2</div>
+        <div>Mad Max</div>
+        <div>Enrolados</div>
+        <div>Matrix Resurrections</div>
+        <div>Titanic</div>
+        <div>Harry Potter</div>
+        <div>Homem-Aranha</div>
+        <div>Sausage Party</div>
     </div>
     <div class="combos" id="combos">
-        <div class = "divTexto">Burguer e CocaCola</div>
-        <div class = "divTexto">Pastel e caldo de cana</div>
-        <div class = "divTexto">Tacos e churros</div>
-        <div class = "divTexto">Hot Dog e suco</div>
-        <div class = "divTexto">Pizza e Fini</div>
-        <div class = "divTexto">Pipoca e guaraná</div>
-        <div class = "divTexto">Sanduíche e Bibs</div>
-        <div class = "divTexto">Batata frita e fanta</div>
-        <div class = "divTexto">Coxinha e Kitkat</div>
-        <div class = "divTexto">Torta e sorvete</div>
-        <div class = "divTexto">Chips e açaí</div>
+        <div>Burguer e CocaCola</div>
+        <div>Pastel e caldo de cana</div>
+        <div>Tacos e churros</div>
+        <div>Hot Dog e suco</div>
+        <div>Pizza e Fini</div>
+        <div>Pipoca e guaraná</div>
+        <div>Sanduíche e Bibs</div>
+        <div>Batata frita e fanta</div>
+        <div>Coxinha e Kitkat</div>
+        <div>Torta e sorvete</div>
+        <div>Chips e açaí</div>
     </div>
     <div class="perfil" id="perfil">
         <div>Configurações</div>
@@ -128,11 +127,10 @@
         <table>
             <tr>
                 <td width="500px" class="virtual"><h1>Virtual Cine</h1></td>
-                <td width="1000px"><h1><span  class="txt_categoria">Categorias</span> 
+                <td width="1000px"><h1><div  class="txt_categoria">Categorias</div> 
                     <span class="flecha" onclick="mostramenucategoria();"><</span><div class="txt_destaque">Destaques </div> 
-                    <span class="flecha" onclick="mostramenudestaque();" ><</span><span class="txt_combo" onclick="abrirCombo()">Combos</span> 
-                    <span class="flecha" onclick="mostramenucombo();"  ><</span></h1></td>
-                    
+                    <span class="flecha" onclick="mostramenudestaque();"><</span><span class="txt_combo" onclick="abrirCombos();">Combos</span> 
+                    <span class="flecha" onclick="mostramenucombo();"><</span></h1></td>
                 <td width="300px">
                     <div id="divBusca">
                         <input type="text" id="txtBusca" placeholder="Buscar..."/>
@@ -157,13 +155,13 @@
                         </tr>
                         <tr>
                             <td align="center">
-                            <a href="../login/login.html">
+                            <a href="entrar.html">
                                 <button class="button button1" id="entrar">   
                                     Entrar
                                 </button>
                             </a>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="../cadastro/cadastro.html">
+                            <a href="cadastrar-se.html">
                                 <button class="button button2" id="cadastro">
                                     Cadastrar-se
                                 </button>
@@ -172,7 +170,7 @@
                         </tr>
                     </table>
                 </td>
-                <td><img src="../img/cinema.jpg" width=900px></td>
+                <td><img src="../img/Cinema.jpg" width=900px></td>
             </tr>
         </table>
     </div>
@@ -183,34 +181,48 @@
             </tr>
         </table>
     </div>
-    <table width="95%" height="300px">
-        <tr>
-            <td align="right">
-                <div class="img">
-                    <a href="#"><img src="../img/2_Fast_2_Furious_2003.jpg" height=450px onclick="telafilme1();"></a>
-                    <div><img src="../img/3D.png"></div>
-                </div>
-            </td>
-            <td align="right">
-                <div class="img">
-                    <a href="#"><img src="../img/Harry Potter.jpg" height=450px onclick="telafilme2();"></a>
-                    <div><img src="../img/3D.png"></div>
-                </div>
-            </td>
-            <td align="right">
-                <div class="img">
-                    <a href="#"><img src="../img/Carros.jpg" height=450px onclick="telafilme3();"></a>
-                    <div><img src="../img/3D.png"></div>
-                </div>
-           
-            </td>
-            <td align="right">
-                <div class="img">
-                    <a href="#"><img src="../img/Vingadores.jpg" height=450px onclick="telafilme4();"></a>
-                    <div><img src="../img/3D.png"></div>
-                </div>
-        </tr>
-    </table>
+    <div class="tabela">
+        <div>
+            <div class="img3d">
+                <a href="#">
+                    <img class="imgfilme" src="../img/2_Fast_2_Furious_2003.jpg" onclick="telafilme1();">
+                    <img class="icone3d" src="../img/3D.png">
+                </a>
+                
+            </div>
+        </div>
+        
+            <div>
+            <div class="img3d">
+                <a href="#">
+                    <img class="imgfilme" src="../img/Harry Potter.jpg" onclick="telafilme2();">
+                    <img class="icone3d" src="../img/3D.png">
+                </a>
+                
+            </div>
+        </div>
+
+            <div>
+            <div class="img3d">
+                <a href="#">
+                    <img class="imgfilme" src="../img/Carros.jpg" onclick="telafilme3();">
+                    <img class="icone3d" src="../img/3D.png">
+                </a>
+                
+            </div>
+        </div>
+       
+            <div>
+            <div class="img3d">
+                <a href="#">
+                    <img class="imgfilme" src="../img/Vingadores.jpg" onclick="telafilme4();">
+                    <img class="icone3d" src="../img/3D.png">
+                </a>
+                
+            </div>
+        </div>
+ </div>
+      
     <div class="d2"><img src="../img/desconto.png" width="200px"></div>
  </body>
  <script>
@@ -339,9 +351,8 @@
             p=0
         }
     }
-
-    function abrirCombo(){
-        window.open("../combos/combos.html")
+    function abrirCombos(){
+        window.open("../combos/combos.html");
     }
  </script>
 </html>

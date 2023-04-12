@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-        .divTexto{
-            font-family: 'Quicksand', sans-serif;
-            font-size: 10px;
-            
-        }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
         body{
-            background-color: #161A1D;
+            background-color: #0B090A;
             display: flex;
             align-content: center;
+            align-items: center;
             flex-direction: column;
             margin: 0px;
+            width: 100%;
+            height: 100vh;
         }
 
         .cabecalho{
             width: 100%;
-            height: 100px;
+            height: 90px;
             background-color: #0B090A;
-            border-bottom: 2px solid #A4161A;
+            border-bottom: 5px solid #A4161A;
             position: fixed;
             top: 0px;
             color:white;
@@ -26,7 +25,6 @@
             text-align: center;
             font-family: 'Quicksand', sans-serif;
             z-index: 1;
-            
         }
         h1{
             display: flex;
@@ -37,28 +35,27 @@
         .flecha{
             margin-left: 30px;
             font-size: 30px;
-            /* transform: rotate(270deg); */
-            font-family: 'Quicksand', sans-serif;
+            transform: rotate(270deg);
+            font-family: 'Poppins', sans-serif;
         }
 
         .rodape{
             width: 100%;
-            height: 100%;
+            height: 90px;
             background-color: white;
             font-size: 30px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Poppins', sans-serif;
             justify-content: center;
             display: flex;
         }
 
         .titulo{
             font-size:80px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .virtual{
-            font-family: 'Quicksand', sans-serif;
-            font-size: 40px;
-            
+            font-size:20px;
+            font-family: 'Cormorant Garamond', serif;
         }
 
         .button {
@@ -69,10 +66,10 @@
             text-decoration: none;
             display: inline-block;
             font-size: 30px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 4px 2px;
             cursor: pointer;
-            border-radius: 15px;
+            border-radius: 30px;
             box-shadow: 2px 2px 5px #A4161A;
 
         }
@@ -85,7 +82,7 @@
         }
         .piscar{
         font-size: larger;
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Quicksand', serif;
         color:#070000;
         animation: animate 1.5s linear infinite;
         }
@@ -130,8 +127,6 @@
             text-decoration: none;
             color: white;
         }
-        
-       
         .categorias{
             width: 150px;
             height: 400px;
@@ -168,7 +163,6 @@
         {
             cursor:pointer;
             margin-left: 30px;
-            font-size: 25px;
         }
         span:hover {
             color:#660708
@@ -207,7 +201,7 @@
         .perfil{
             width: 150px;
             height: 200px;
-            background-color: #757474;
+            background-color: #660708;
             position: absolute;
             top: -400px;
             left: 92%;
@@ -239,20 +233,18 @@
             background-color: #660708;
             border:solid 1px;
             border-radius:20px;
-            width: 300px;
+            width:300px;
             height: 40px;
             display: flex;
             align-items: center;
             align-content: center;
-            
-            
           }
           
           #txtBusca{
             float:left;
             background-color:transparent;
             padding-left:5px;
-            font-family: 'Quicksand', sans-serif;
+            font-style:italic;
             font-size:18px;
             border:none;
             height:32px;
@@ -260,4 +252,20 @@
             outline: none;
             color: white;
           }
-
+          .imgfilme{
+            position: absolute;
+            height:450px;
+          }
+          .icone3d{
+            position: relative;
+            top:0;
+            left:0;
+          }
+          .tabela{
+            background-color: #0B090A;
+            display: flex;
+            gap:374px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+          }
