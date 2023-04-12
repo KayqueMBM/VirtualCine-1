@@ -128,13 +128,15 @@
         <table>
             <tr>
                 <td width="500px" class="virtual"><h1>Virtual Cine</h1></td>
-                <td width="1000px"><h1><span onclick="mostramenucategoria();" class="txt_categoria">Categorias</span> 
-                    <div class="flecha"><</div><span onclick="mostramenudestaque();" class="txt_destaque">Destaques </span> 
-                    <div class="flecha"><</div><span onclick="mostramenucombo();" class="txt_combo">Combos</span> <div class="flecha"><</div></h1></td>
+                <td width="1000px"><h1><span  class="txt_categoria">Categorias</span> 
+                    <span class="flecha" onclick="mostramenucategoria();"><</span><div class="txt_destaque">Destaques </div> 
+                    <span class="flecha" onclick="mostramenudestaque();" ><</span><span class="txt_combo" onclick="abrirCombo()">Combos</span> 
+                    <span class="flecha" onclick="mostramenucombo();"  ><</span></h1></td>
+                    
                 <td width="300px">
                     <div id="divBusca">
                         <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                        <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
+                        <img src="../img/Lupa-branca.webp" width="20px" id="btnBusca" alt="Buscar"/>
                     </div>
                 </td>
                 <td width="200px">
@@ -155,13 +157,13 @@
                         </tr>
                         <tr>
                             <td align="center">
-                            <a href="entrar.html">
+                            <a href="../login/login.html">
                                 <button class="button button1" id="entrar">   
                                     Entrar
                                 </button>
                             </a>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="cadastrar-se.html">
+                            <a href="../cadastro/cadastro.html">
                                 <button class="button button2" id="cadastro">
                                     Cadastrar-se
                                 </button>
@@ -336,6 +338,10 @@
             perfil.classList.remove("desliza");
             p=0
         }
+    }
+
+    function abrirCombo(){
+        window.open("../combos/combos.html")
     }
  </script>
 </html>
