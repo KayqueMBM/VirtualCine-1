@@ -1,6 +1,7 @@
 let posInicial = 0;
 let pos = 0
 
+
 function translacionarFuncao() {
     
      pos = pos +400;
@@ -45,3 +46,7 @@ function translacionarFuncao() {
               
                
           }
+
+     function voltar(){
+          window.open("../telaInicial/telaInicial.html");
+     }

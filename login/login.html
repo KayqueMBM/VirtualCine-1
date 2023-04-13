@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="login.css">
-  
 </head>
 
 <body>
-  <div id="login-container">
+  <div class="caixa-principal">
     <h1>Login</h1>
-    <form action = "../telaInicial/telaInicial.html" target="_blank" method="post">
+    <form action="#">
       <label for="email">E-mail</label>
       <input type="email" name="email" id="email" placeholder="Digite seu e-email" autocomplete="off">
       <label for="password">Senha</label>
       <input type="password" name="password" id="password" placeholder="Digite sua senha">
-      <a href="../RECUPERAÇÃO_SENHA/rec.html" target="_blank" id="forgot-pass">Esqueceu a senha?
+      <a href="../RECUPERAÇÃO_SENHA/rec.html" target="_blank" class="esquece_a_senha">Esqueceu a senha?
         <div class="esqueceu_container"></div>
       </a>
 
-      <input type="submit" value="Login">
+      <input type="button" value="Login">
     </form>
-    
-    
-    <div id="social-container">
+    <div class="social-container">
       <p>Ou entre pelas suas redes sociais</p>
 
       <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc5NDgyMjY3LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
@@ -38,10 +36,16 @@
         <i class="fa fa-linkedin"></i>
       </a>
 
+      <a href="https://accounts.google.com/v3/signin/identifier?dsh=S856183839%3A1681393709832952&hl=pt-BR&ifkv=AQMjQ7Qzu1RI3oVfK7q4_w2QdyLsXVlZj1UoGRLAyH7MrRIsZO_3Pfvj38INGrh8crNnzn0WjNJm7w&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+        target="_blank">
+        <i class="fa fa-google"></i>
+      </a>
+
     </div>
-    <div id="register-container">
+    <div id="registrar-container">
       <p>Ainda não tem uma conta?</p>
-      <a href="cadastro/cadastro.html">Registrar</a>
+      <br>
+      <a href="../CADASTRO/index.html">Registrar</a>
     </div>
   </div>
 </body>

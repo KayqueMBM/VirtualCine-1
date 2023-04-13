@@ -12,6 +12,7 @@
 body{
     padding : 0;
     margin : 0;
+    background-color: #161A1D;
 }
 
 .principal{
@@ -22,7 +23,7 @@ body{
 }
 .cabecalho {
     width:100%;
-    height: 100px;
+    height: 90px;
 
     background-color: #0B090A;
     color: white;
@@ -35,31 +36,62 @@ body{
     flex-direction: column;
     
 }
-.virtualCineTexto {
-    width : 20%;
+.caixaL{
+   
     height: 100%;
+    width: 300px;
+
+    /* border-radius: 1px;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: dotted; */
+}
+
+/* - Texto VIRTUAL CINE - */
+.logoTexto{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size:40px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoTexto:hover{
+    font-size:41px;
+    cursor: pointer;
+}
+
+.divDivisoria{
+    width: 100%;
+    height: 200px;
+    background-color: #161A1D;
     display: flex;
     justify-content: center;
-    align-items:center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    
+    align-items: center;
+   
 }
-.virtualCineTexto:hover{
-    font-size: 45px;
-    cursor: pointer;
-      
+.textoDivDivisoria{
+    color:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+   
 }
 
 .fundoGradiente{
     background-color: #A4161A;
     
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-image: linear-gradient(to bottom, #A4161A, #161A1D);
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .metadeGradiente{
     width :45%;
@@ -96,7 +128,7 @@ body{
 
 .containerImagens{
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     
     justify-content: space-around;
@@ -168,6 +200,15 @@ body{
 }
 h{
     border-bottom: 2px solid #A4161A;
+}
+.caixaL{
+   
+    height: 100%;
+    width: 300px;
+
+    /* border-radius: 1px;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: dotted; */
 }
 
 .rodapeImage{

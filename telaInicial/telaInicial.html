@@ -6,114 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Cine</title>
     <link rel="stylesheet" href="telaInicial.css">
-    <script language="JavaScript">
-        // função pra ler querystring
-        function queryString(parameter) {  
-              var loc = location.search.substring(1, location.search.length);   
-              var param_value = false;   
-              var params = loc.split("&");   
-              for (i=0; i<params.length;i++) {   
-                  param_name = params[i].substring(0,params[i].indexOf('='));   
-                  if (param_name == parameter) {                                          
-                      param_value = params[i].substring(params[i].indexOf('=')+1)   
-                  }   
-              }   
-              if (param_value) {   
-                  return param_value;   
-              }   
-              else {   
-                  return undefined;   
-              }   
-        }
-        var variavel = queryString("usuario");
+    </head>
 
-        function VerificaBotoes() {
-            if(variavel == undefined){
-                document.getElementById('entrar').style.display = 'inline-block';
-                document.getElementById('cadastro').style.display = 'inline-block';
-            }
-            else{
-                document.getElementById('entrar').style.display = 'none';
-                document.getElementById('cadastro').style.display = 'none';
-            }
-        }
-
-        function telafilme1(){
-            if (variavel == undefined) {
-                alert('Precisa logar-se antes!')
-            }
-            else
-            {
-                window.location.href= 'tela_filme1.html';
-            }
-        }
-        function telafilme2(){
-            if (variavel == undefined) {
-                alert('Precisa logar-se antes!')
-            }
-            else
-            {
-                window.location.href= 'tela_filme2.html';
-            }
-        }
-        function telafilme3(){
-            if (variavel == undefined) {
-                alert('Precisa logar-se antes!')
-            }
-            else
-            {
-                window.location.href= 'tela_filme3.html';
-            }
-        }
-        function telafilme4(){
-            if (variavel == undefined) {
-                alert('Precisa logar-se antes!')
-            }
-            else
-            {
-                window.location.href= 'tela_filme4.html';
-            }
-        }
-
-    </script></head>
 <body onload="VerificaBotoes();">
     <div class="categorias" id="categorias">
-        <div>Aventura</div>
-        <div>Terror</div>
-        <div>Ação</div>
-        <div>Romance</div>
-        <div>Comédia</div>
-        <div>Drama</div>
-        <div>Suspense</div>
-        <div>Documentário</div>
-        <div>Ficção científica</div>
-        <div>Fantansia</div>
-        <div>Animação</div>
-        <div>Super-herói</div>
+        <div class = "cabecalhoBotoes"><h2>Aventura         </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Terror           </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Ação             </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Romance          </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Comédia          </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Drama            </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Suspense         </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Documentário     </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Ficção científica</h2></div>
+        <div class = "cabecalhoBotoes"><h2>Fantansia        </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Animação         </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Super-herói      </h2></div>
     </div>
     <div class="destaques" id="destaques" >
-        <div>Gato de Botas 2</div>
-        <div>O Esquadrão Suicida 2</div>
-        <div>Mad Max</div>
-        <div>Enrolados</div>
-        <div>Matrix Resurrections</div>
-        <div>Titanic</div>
-        <div>Harry Potter</div>
-        <div>Homem-Aranha</div>
-        <div>Sausage Party</div>
+        <div class = "cabecalhoBotoes"><h2>Gato de Botas 2      </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>O Esquadrão Suicida 2</h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Mad Max              </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Enrolados            </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Matrix Resurrections </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Titanic              </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Harry Potter         </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Homem-Aranha         </h2>    </div>
+        <div class = "cabecalhoBotoes"><h2>Sausage Party        </h2>    </div>
     </div>
     <div class="combos" id="combos">
-        <div>Burguer e CocaCola</div>
-        <div>Pastel e caldo de cana</div>
-        <div>Tacos e churros</div>
-        <div>Hot Dog e suco</div>
-        <div>Pizza e Fini</div>
-        <div>Pipoca e guaraná</div>
-        <div>Sanduíche e Bibs</div>
-        <div>Batata frita e fanta</div>
-        <div>Coxinha e Kitkat</div>
-        <div>Torta e sorvete</div>
-        <div>Chips e açaí</div>
+        <div class = "cabecalhoBotoes"><h2>Burguer e CocaCola    </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Pastel e caldo de cana</h2></div>
+        <div class = "cabecalhoBotoes"><h2>Tacos e churros       </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Hot Dog e suco        </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Pizza e Fini          </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Pipoca e guaraná      </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Sanduíche e Bibs      </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Batata frita e fanta  </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Coxinha e Kitkat      </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Torta e sorvete       </h2></div>
+        <div class = "cabecalhoBotoes"><h2>Chips e açaí          </h2></div>
     </div>
     <div class="perfil" id="perfil">
         <div>Configurações</div>
@@ -126,7 +58,7 @@
         
         <table>
             <tr>
-                <td width="500px" class="virtual"><h1>Virtual Cine</h1></td>
+                <td width="500px"  class="virtual"><h1>VIRTUAL CINE</h1></td>
                 <td width="1000px"><h1><div  class="txt_categoria">Categorias</div> 
                     <span class="flecha" onclick="mostramenucategoria();"><</span><div class="txt_destaque">Destaques </div> 
                     <span class="flecha" onclick="mostramenudestaque();"><</span><span class="txt_combo" onclick="abrirCombos();">Combos</span> 
@@ -225,134 +157,5 @@
       
     <div class="d2"><img src="../img/desconto.png" width="200px"></div>
  </body>
- <script>
-    c = 0
-    d = 0
-    co = 0
-    p = 0
-    function mostramenucategoria()
-    {
-        c = c + 1 
-
-        if (d==1)  
-        {
-            destaques.classList.add("sobe");
-            d = 0
-        }
-        if (co==1)  
-        {
-            combos.classList.add("sobe");
-            co = 0
-        }
-        if (p==1)  
-        {
-            perfil.classList.add("sobe");
-            p = 0
-        }
-        if (c == 1)
-        {
-            categorias.classList.add("desliza");
-            categorias.classList.remove("sobe");
-        }
-        else{
-            categorias.classList.add("sobe");
-            categorias.classList.remove("desliza");
-            c = 0
-        }
-        
-    }
-    function mostramenudestaque()
-    {
-        d = d + 1 
-
-        if (c==1)  
-        {
-            categorias.classList.add("sobe");
-            c = 0
-        }
-        if (co==1)  
-        {
-            combos.classList.add("sobe");
-            co = 0
-        }
-        if (p==1)  
-        {
-            perfil.classList.add("sobe");
-            p = 0
-        }
-        if (d == 1)
-        {
-            destaques.classList.add("desliza");
-            destaques.classList.remove("sobe");
-        }
-        else{
-            destaques.classList.add("sobe");
-            destaques.classList.remove("desliza");
-            d = 0
-        }
-    }
-    function mostramenucombo()
-    {
-        co = co + 1 
-
-        if (c==1)  
-        {
-            categorias.classList.add("sobe");
-            c = 0
-        }
-        if (d==1)  
-        {
-            destaques.classList.add("sobe");
-            d = 0
-        }
-        if (p==1)  
-        {
-            perfil.classList.add("sobe");
-            p = 0
-        }
-        if (co == 1)
-        {
-            combos.classList.add("desliza");
-            combos.classList.remove("sobe");
-        }
-        else{
-            combos.classList.add("sobe");
-            combos.classList.remove("desliza");
-            co = 0
-        }
-    }
-    function mostramenuperfil()
-    {
-        p = p + 1 
-
-        if (c==1)  
-        {
-            categorias.classList.add("sobe");
-            c = 0
-        }
-        if (d==1)  
-        {
-            destaques.classList.add("sobe");
-            d = 0
-        }
-        if (co == 1)
-        {
-            combos.classList.add("sobe");
-            co = 0
-        }
-        if (p == 1)
-        {
-            perfil.classList.add("desliza");
-            perfil.classList.remove("sobe");
-        }
-        else{
-            perfil.classList.add("sobe");
-            perfil.classList.remove("desliza");
-            p=0
-        }
-    }
-    function abrirCombos(){
-        window.open("../combos/combos.html");
-    }
- </script>
+ <script src="telaInicial.js"> </script>
 </html>
