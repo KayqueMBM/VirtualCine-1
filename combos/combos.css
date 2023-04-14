@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @keyframes rodapeImagemAnim {
     0%{height: 0%;}
@@ -17,49 +18,56 @@ body{
 
 .principal{
     background-color: #161A1D;
-    width: 1920px;
-    height: 2160px;
+    width: 100%;
+    height: 200vh;
     
 }
 .cabecalho {
-    width:100%;
-    height: 90px;
-
-    background-color: #0B090A;
-    color: white;
-    
-    display: flex;
-    justify-content: space-between;
-
-    border-bottom: 2px solid #A4161A;
-    display: flex;
-    flex-direction: column;
-    
-}
-.caixaL{
-   
-    height: 100%;
-    width: 300px;
-
-    /* border-radius: 1px;
-    border-color: rgba(255, 255, 255, 1);
-    border-style: dotted; */
-}
-
-/* - Texto VIRTUAL CINE - */
-.logoTexto{
     width: 100%;
+    height: 10%;
+    background-color: #0B090A;
+    
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.cabecalhoBorda{
+    width: 25%;
     height: 100%;
-    color: white;
-    font-size:40px;
-    font-family: 'Quicksand', sans-serif;
+    /* border: 3px solid #A4161A; */
+    font-size: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+.cabecalhoBorda2{
+    width: 25%;
+    height: 100%;
+    /* border: 3px solid #A4161A; */
+
+    display: flex;
+    align-items: center;
 }
 
-.logoTexto:hover{
-    font-size:41px;
+.cabecalhoMeio{
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txtLogo{
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.txtLogo:hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -108,7 +116,7 @@ body{
 }
 
 .rodape {
-    width:1920px;
+    width:100%;
     height: 75px;
     position: fixed;
     border-top: 1px solid white;
@@ -201,15 +209,6 @@ body{
 h{
     border-bottom: 2px solid #A4161A;
 }
-.caixaL{
-   
-    height: 100%;
-    width: 300px;
-
-    /* border-radius: 1px;
-    border-color: rgba(255, 255, 255, 1);
-    border-style: dotted; */
-}
 
 .rodapeImage{
     width: 400px;
@@ -244,7 +243,3 @@ h{
 .rodapeImage:hover + .rodapePreco{
     display: flex;
 }
-
-
-
-

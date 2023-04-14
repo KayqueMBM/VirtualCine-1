@@ -10,15 +10,15 @@ body,html {
 /* - Fundo principal - */
 .principal {
     
-    width: 1920px;
-    height: 2160px;
+    width: 100%;
+    height: 200vh;
     
     background-color: #161A1D;
 }
 /* - Cabeçalho principal -*/
 .cabecalho {
     width:100%;
-    height: 90px;
+    height: 10%;
 
     background-color: #0B090A;
     border-bottom: 3px solid #A4161A;

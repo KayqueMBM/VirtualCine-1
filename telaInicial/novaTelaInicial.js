@@ -30,43 +30,16 @@
       }
   }
 
-  function telafilme1(){
-      if (variavel == undefined) {
-          alert('Precisa logar-se antes!')
-      }
-      else
-      {
-          window.location.href= 'tela_filme1.html';
-      }
+  function telafilme(i){
+      
+   
+    if (variavel == undefined) {
+      alert('Precisa logar-se antes!');
+  }  
+  else {
+      window.location.href= '../telasFilmes/telaFilmes'+i+'.html';
   }
-  function telafilme2(){
-      if (variavel == undefined) {
-          alert('Precisa logar-se antes!')
-      }
-      else
-      {
-          window.location.href= 'tela_filme2.html';
-      }
-  }
-  function telafilme3(){
-      if (variavel == undefined) {
-          alert('Precisa logar-se antes!')
-      }
-      else
-      {
-          window.location.href= 'tela_filme3.html';
-      }
-  }
-  function telafilme4(){
-      if (variavel == undefined) {
-          alert('Precisa logar-se antes!')
-      }
-      else
-      {
-          window.location.href= 'tela_filme4.html';
-      }
-    }
-
+}
     c = 0
     d = 0
     co = 0
@@ -193,6 +166,9 @@
             p=0
         }
     }
-    function abrirCombos(){
-        window.open("../combos/combos.html");
+
+    function abrirTela(pasta,arquivo){
+        let str = '../'+pasta+'/'+arquivo;
+        window.open(str);
+        
     }

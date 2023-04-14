@@ -4,7 +4,7 @@
             var senha=document.getElementById('senha').value;
             senha=senha.toLowerCase();
             if (usuario=="kayque" && senha=="123456") {
-                window.open('../telaInicial/telaInicial.html?usuario='+usuario,'Virtual Cine');
+                window.open('../telaInicial/novaTelaInicial.html?usuario='+usuario,'Virtual Cine');
                
             }
             else{

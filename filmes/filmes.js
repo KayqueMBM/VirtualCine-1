@@ -48,5 +48,9 @@ function translacionarFuncao() {
           }
 
      function voltar(){
-          window.open("../telaInicial/telaInicial.html");
+          window.open("../telaInicial/novaTelaInicial.html");
      }
+
+     function telafilme(i){
+            window.location.href= '../telasFilmes/telaFilmes'+i+'.html';
+      }
