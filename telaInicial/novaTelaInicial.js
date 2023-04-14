@@ -154,6 +154,7 @@
         if (co == 1)
         {
             combos.classList.add("desliza");
+            
             combos.classList.remove("sobe");
         }
         else{
@@ -195,12 +196,3 @@
     function abrirCombos(){
         window.open("../combos/combos.html");
     }
-
-    function Login(){
-        window.open("../login/login.html");
-    }
-
-    function Cadastro(){
-        window.open("../cadastro/cadastro.html");
-    }
-

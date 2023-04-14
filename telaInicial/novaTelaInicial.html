@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="novaTelaInicial.css">
+    <title>Virtual Cine</title>
+</head>
+<body onload="VerificaBotoes()">
+    <div class="cabecalho">
+        
+        <div class="cabecalhoBorda">
+            <div class="txtLogo">VIRTUAL CINE</div>
+        </div>
+        
+        <div class="cabecalhoMeio">
+            <!-- Categorias -->
+            <div class="cabecalhoBotoes" ><div class="txtBotoes">CATEGORIAS</div></div>
+            <span class="flecha" onclick="mostramenucategoria();"><</span>
+            <!-- Destaques -->
+            <div class="cabecalhoBotoes" ><div class="txtBotoes">DESTAQUES</div></div>
+            <span class="flecha" onclick="mostramenudestaque();"><</span>
+            <!-- Combos -->
+            <div class="cabecalhoBotoes"><div class="txtBotoes">COMBOS</div></div>
+            <span class="flecha" onclick="mostramenucombo();"><</span>
+        </div>
+
+        
+        <div class="cabecalhoBorda2" >
+            <div class="cabecalhoBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                
+            </div>
+            <div class="cabecalhoLupa">
+                <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
+            </div>
+            <a href="#" onclick="mostramenuperfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
+        </div>
+    </div>
+    <div class="containerAbaPrincipal">
+        <div class="containerAba">
+            <!-- Categorias -->
+            <div class="categorias" id="categorias">
+                
+                <div class="contentAbas"><h2>Aventura </h2></div>
+                <div class="contentAbas"><h2>Terror</h2></div>
+                <div class="contentAbas"><h2>Ação</h2></div>
+                <div class="contentAbas"><h2>Romance</h2></div>
+                <div class="contentAbas"><h2>Comédia</h2></div>               
+            </div>
+            <!-- Destaques -->
+            <div class="destaques"id="destaques">
+                <div class="contentAbas"><h2>Gato de Botas 2</h2></div>
+                <div class="contentAbas"><h2>Mad Max</h2></div>
+                <div class="contentAbas"><h2>Enrolados</h2></div>
+                <div class="contentAbas"><h2>Titanic </h2></div>
+                <div class="contentAbas"><h2>Harry Potter</h2></div> 
+            </div>
+            <!-- Combos -->
+            <div class="combos"id="combos">
+                <div class="contentAbas"><h2>Burguer e CocaCola</h2></div>
+                <div class="contentAbas"><h2>Pastel e caldo de cana</h2></div>
+                <div class="contentAbas"><h2>Tacos e churros</h2></div>
+                <div class="contentAbas"><h2>Hot Dog e suco</h2></div>
+                <div class="contentAbas"><h2>Pizza e Fini </h2></div> 
+            </div>
+        </div>
+            <div class="containerAba2">
+                <div class="perfil" id ="perfil">
+                    <div class="contentAbas">Configurações</div>
+                    <div class="contentAbas">Histórico</div>
+                    <div class="contentAbas">Conta</div>
+                    <div class="contentAbas">Fale Conosco</div>
+                    <div class="contentAbas">Sair</div>
+                </div>
+            </div>
+            
+    </div>
+    <div class="content">
+        <div class="contentMetade">
+            <div class="containerSlogan">
+                <div class="textoSlogan"> Um novo jeito de assistir em casa.</div>
+            </div>
+            <div class="containerBotoes">
+                <div class="contentBotoes"onclick ="Login();"><div class= "txtBotoesC">Entrar</div></div>
+                <div class="contentBotoes"onclick ="Cadastro();"><div class= "txtBotoesC">Cadastrar-se</div></div>
+            </div>
+        </div>
+        <div class="contentMetade2">
+            <img src="../img/Cinema.jpg" width="100%">
+        </div>
+    </div>
+    <div class="rodape">Assista os melhores filmes em 3D </div>
+    <div class="containerFilmes">
+        <div class="divFilmes">
+            <a href="#">
+                <img class="icone3d" src="../img/3D.png">
+                <img class="imgFilme" src="../img/2_Fast_2_Furious_2003.jpg" onclick="telafilme1();">
+                
+            </a>
+        </div>
+        <div class="divFilmes">
+            <a href="#">
+                <img class="icone3d" src="../img/3D.png">
+                <img class="imgFilme" src="../img/Harry Potter.jpg" onclick="telafilme2();">
+            </a>
+        </div>
+        <div class="divFilmes">
+            <a href="#">
+                <img class="icone3d" src="../img/3D.png">
+                <img class="imgFilme" src="../img/Carros.jpg" onclick="telafilme3();">
+                
+            </a>>
+        </div>
+        <div class="divFilmes">
+            <a href="#">
+                <img class="icone3d" src="../img/3D.png">
+                <img class="imgFilme" src="../img/Vingadores.jpg" onclick="telafilme4();">
+                
+            </a>
+        </div>
+    </div>
+    
+</body>
+    <script src="telaInicial.js"> </script>
+</html>
