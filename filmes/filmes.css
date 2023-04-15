@@ -174,7 +174,7 @@ h{
     z-index: -1;
     width: 300px;
     height: inherit;
-    
+    cursor: pointer;
 }
 
 .rodapeFilme{
