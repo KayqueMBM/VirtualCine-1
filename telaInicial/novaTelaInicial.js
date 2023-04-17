@@ -161,6 +161,7 @@
             perfil.classList.remove("sobe");
         }
         else{
+            // Quando ele clicar no perfil ele vai adicionar uma classe que tem uma animação de descer
             perfil.classList.add("sobe");
             perfil.classList.remove("desliza");
             p=0
@@ -169,6 +170,6 @@
 
     function abrirTela(pasta,arquivo){
         let str = '../'+pasta+'/'+arquivo;
-        window.open(str);
+        window.open(str,'self');
         
     }
