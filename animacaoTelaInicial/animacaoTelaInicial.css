@@ -69,7 +69,7 @@ body {
     width: 100px;
     height: 100px;
     border-bottom: 5px solid #A4161A;
-    background-color: black;
+    background-color: #161A1D;
     animation-name: quad1A;
     animation-duration: 5s; 
 }
@@ -83,7 +83,7 @@ body {
     top :30%; 
     width: 100px;
     height: 100px;
-    background-color: #0d0a00;
+    background-color: #161A1D;
     animation-name: quad2A;
     animation-duration: 5s; 
 }

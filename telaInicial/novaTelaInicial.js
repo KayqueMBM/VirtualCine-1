@@ -23,10 +23,12 @@
       if(variavel == undefined){
           document.getElementById('entrar').style.display = 'inline-block';
           document.getElementById('cadastro').style.display = 'inline-block';
+          document.getElementById('assinar').style.display = 'none';
       }
       else{
           document.getElementById('entrar').style.display = 'none';
           document.getElementById('cadastro').style.display = 'none';
+          document.getElementById('assinar').style.display = 'inline-block';
       }
   }
 
@@ -170,6 +172,5 @@
 
     function abrirTela(pasta,arquivo){
         let str = '../'+pasta+'/'+arquivo;
-        window.open(str,'self');
-        
+        location.href = str;
     }
