@@ -112,7 +112,7 @@ h2{
     display: flex;
     justify-content: space-around;
     text-align: center;
- 
+    z-index: 2;
    
 }
 
@@ -245,7 +245,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    z-index: 1;
+    
 }
 .contentMetade2{z-index: -2;} 
 
@@ -258,8 +258,8 @@ a{
     display: flex;
     justify-content: space-around;
     margin-top: 9%;
-    
-    /* z-index: 1; */
+   
+   
    
 }
 .containerAba,.containerAba2{
@@ -270,7 +270,7 @@ a{
     
     display: flex;
     justify-content: space-around;
-    z-index: -1;
+
 }
 .containerAba2{
     right: 1%;
@@ -333,7 +333,7 @@ a{
     /* border: 2px solid #660708; */
     display: flex;
     justify-content: space-evenly;
- 
+    z-index: 2;
     
 }
 .contentBotoes{
@@ -398,7 +398,7 @@ a{
             width: 0px;
             height: 200px;
             animation-delay: 0,5s;
-            /* z-index: 3; */
+          
         }
 @keyframes gira2{
            
