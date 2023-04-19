@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @keyframes rodapeImagemAnim {
     0%{height: 0%;}
@@ -146,7 +144,7 @@ body{
     height: 75px;
     position: fixed;
     border-top: 1px solid white;
-    cursor: pointer;
+    
     background-color: #A4161A;
     bottom: 0px;
     display: flex;
@@ -155,9 +153,11 @@ body{
     color:whitesmoke;
     font-size: 50px;
     font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
 }
 .rodape:hover{
     height: 90px;
+    
 }
 
 .containerImagens{
@@ -240,7 +240,8 @@ h{
     width: 400px;
     height: 50px;
     background-color: #660708 ;
-    cursor: pointer;
+
+
     display: flex;
     align-items: end;
     justify-content: center;
@@ -263,8 +264,11 @@ h{
     font-size: 30px;
     display: none;
     animation-name: rodapeImagemAnim;
+    
+   
     animation-duration: 1s;
 }
 .rodapeImage:hover + .rodapePreco{
     display: flex;
+    
 }
