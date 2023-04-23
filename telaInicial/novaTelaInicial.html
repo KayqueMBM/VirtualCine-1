@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
     <link rel="stylesheet" href="novaTelaInicial.css">
     <title>Virtual Cine</title>
 </head>
@@ -92,37 +97,179 @@
             <img src="../img/Virtual Cine.png" width="100%">
         </div>
     </div>
-    <div class="rodape">Assista os melhores filmes em 3D </div>
+
+    <div class="barra_separa_secao">Assista os melhores filmes em 3D </div>
+    
     <div class="containerFilmes">
         <div class="divFilmes">
-            <a href="#">
-                <img class="icone3d" src="../img/3D.png">
+            <a href="#" class="movie-item">
                 <img class="imgFilme" src="../img/2_Fast_2_Furious_2003.jpg" onclick="telafilme('1');">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        +Velozes +Furiosos
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>8</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>107 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>3D</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>14+</span>
+                        </div>
+                    </div>
+                </div>
             </a>
         </div>
         <div class="divFilmes">
-            <a href="#">
-                <img class="icone3d" src="../img/3D.png">
+            <a href="#" class="movie-item">
                 <img class="imgFilme" src="../img/Harry Potter.jpg" onclick="telafilme('2');">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Harry Potter e as Relíquias da Morte - Parte 2 
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.3</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>130 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>3D</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>12+</span>
+                        </div>
+                    </div>
+                </div>
             </a>
         </div>
         <div class="divFilmes">
-            <a href="#">
-                <img class="icone3d" src="../img/3D.png">
+            <a href="#" class="movie-item">
                 <img class="imgFilme" src="../img/Carros.jpg" onclick="telafilme('3');">
-                
-            </a>>
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Carros
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>10</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>117 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>3D</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>Livre</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="divFilmes">
-            <a href="#">
-                <img class="icone3d" src="../img/3D.png">
+            <a href="#" class="movie-item">
                 <img class="imgFilme" src="../img/Vingadores.jpg" onclick="telafilme('4');">
-                
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Vingadores: Ultimato
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.4</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>181 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>3D</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>12+</span>
+                        </div>
+                    </div>
+                </div>
             </a>
         </div>
     </div>
-    <div class="d2"><img src="../img/3D filme.png" width="200px"></div> 
-
+    <div class="barra_branca"></div>
+    <div class="rodape">
+        <table width="100%">
+            <tr>
+                <td width="25%">
+                    <div>
+                        <p><b>Virtual Cine</b></p>
+                        <ul class="footer-menu">
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Meu perfil</a></li>
+                            <li><a href="#">Planos de pagamento</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width="25%">
+                    <div>
+                        <p><b>Download app</b></p>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">
+                                    <img src="../img/google-play.png" alt="" width="50%">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../img/apple-store.png" alt="" width=55%">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td width="25%">
+                    <div class="social-list">
+                        <p><b>Rede Sociais</b></p>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </div>
+                </td>
+                <td width="25%">
+                    <p><b>Políticas</b></p>
+                    <ul class="footer-menu">
+                        <li><a href="#">Prevenções</a></li>
+                        <li><a href="#">Privacidade e Segurança</a></li>
+                        <li><a href="#">Trocas e Cancelamentos</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
     <script src="novaTelaInicial.js"> </script>
 </html>
