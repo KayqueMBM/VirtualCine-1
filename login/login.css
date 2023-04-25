@@ -10,6 +10,7 @@
 
 body {
   background-image: url('../img/cinema.jpg');
+  
   background-size: cover;
   background-position-y: -200px;
 }
@@ -132,8 +133,3 @@ input:focus { /* hover da linha do email e da senha*/
   display : flex;
   justify-content: right;
 }
-
-
-
-
-
