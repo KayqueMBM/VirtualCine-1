@@ -1,4 +1,23 @@
-    // função pra ler querystring
+   tempo_carrosel=setInterval(deslizar,1000)
+   posicao=0
+   function deslizar()
+   {
+    posicao=posicao + d
+    
+    if(posicao==0)
+    {
+        d=-400
+    }
+    if(posicao==-800)
+    {
+        d=400
+    }
+   
+    $("#carrosel").animate({
+        marginLeft:posicao
+    },2000)
+   }
+   // função pra ler querystring
         
     function queryString(parameter) {  
         var loc = location.search.substring(1, location.search.length);   
