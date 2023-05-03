@@ -257,7 +257,8 @@ a{
     overflow: hidden;
     
 }
-.contentMetade2{z-index: 2;
+.contentMetade2{
+    z-index: 0;
     display: flex;
     flex-direction: row;
 } 
@@ -539,4 +540,16 @@ a{
 
 .social-item ~ .social-item {
     margin-left: 20px;
+}
+.titulo1{
+    text-align: center;
+}
+.titulo2{
+    text-align: center;
+}
+.titulo3{
+    text-align: center;
+}
+.titulo4{
+    text-align: center;
 }
