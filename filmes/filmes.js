@@ -22,4 +22,6 @@ function setaPos(){
      var w = window.innerWidth *0.9;
      document.getElementById("seta2").style.left = w+'px';
      document.getElementById("seta4").style.left = w+'px';
+     document.getElementById("seta6").style.left = w+'px';
+     document.getElementById("seta8").style.left = w+'px';
 }

@@ -7,25 +7,31 @@
     <title>Virtual Cine</title>
     <link rel="stylesheet" href="filmes.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
- 
-    
 </head>
-<body onload="setaPos()">
+<body onload="setaPos()" id="context">
     <div class="principal">
         <div class="cabecalho">
             
             <div class="caixaL"> 
                 <div class="logoTexto" onclick="voltar();">VIRTUAL CINE</div>
             </div>
+            <div class="cabecalhoBorda2" >
+                <div class="cabecalhoBusca">
+                    <input type="search" id="txtBusca" placeholder="Buscar..."/>
+                    
+                </div>
+                <div class="cabecalhoLupa">
+                    <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar" onclick="buscar()"/>
+                </div>
+            </div>
         </div>
 
         <div class="caixaContent">
             <div class="caixaColunas">
-                <br> <br>
+                
+                
                 <div class="caixaTexto">
                    <h> Clássicos </h>
-                   <br> <br>
-                   <br> <br>
                 </div>
                 <br> <br>
                 <div class="caixaF">
@@ -176,10 +182,10 @@
                     </div>
                     <button onclick="translacionarFuncao('1')" class="setaFrente" id = seta2> ></button>
                 </div>
-                <br> <br>
+                
+                
                 <div class="caixaTexto">
                     <h> Destaques </h>
-                    <br> <br>
                     <br> <br>
                 </div>
                 <div class="caixaF">
@@ -212,10 +218,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
-                        
                         </div>
+
                         <div class="filmes">
                             
                             <div class="filmesCabecalho">3D</div>
@@ -241,17 +246,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
-                        
                         </div>
+
                         <div class="filmes">
                             
                             <div class="filmesCabecalho">3D</div>
                             <div class="divFilme">
                                 <img src="../img/filmeTravelToCenter.png" class="imgFilme" onclick="telafilme('12');"> 
                                 <div class="rodapeFilme">
-                                    <div class = "rodapeCabecalhoFilme"> Center of the Earth (2008) </div>
+                                    <div class = "rodapeCabecalhoFilme"> Journey to the center of the Earth (2008) </div>
                                 
                                     <div class="rodapeRodape">
                                         <div class="icon">
@@ -271,7 +275,6 @@
                                     </div>
                                 </div>
                             </div>
-                        
                         </div>
 
                         <div class="filmes">
@@ -300,7 +303,6 @@
                                     </div>
                                 </div>                  
                             </div>
-                        
                         </div>
                     
                         <div class="filmes">
@@ -327,20 +329,20 @@
                                         </div>
                                     </div>
                                 </div>
-                            
                             </div>
                         </div>
                     </div>
+
                     <button onclick="translacionarFuncao('2')" class="setaFrente" id = seta4> ></button>
                 </div>
-                <br> <br>
+                
+                
                 <div class="caixaTexto">
                     <h> Corrida </h>
                     <br> <br>
-                    <br> <br>
-                 </div>
-                 <br> <br>
-                 <div class="caixaF">
+                </div>
+                <br> <br>
+                <div class="caixaF">
                     <button onclick="retornarFuncao('3')" class="setaTras" id = seta5> <</button>
 
                     <div id = "caixaFilmes3" class="caixaFilmes">
@@ -493,13 +495,188 @@
                     <button onclick="translacionarFuncao('3')" class="setaFrente" id = seta6> ></button>
                 </div>
 
+
+                <div class="caixaTexto">
+                    <h> Ação </h>
+                    <br> <br>
+                </div>
+                <br> <br>
+                <div class="caixaF">
+                    <button onclick="retornarFuncao('4')" class="setaTras" id = seta7> <</button>
+
+                    <div id = "caixaFilmes4" class="caixaFilmes">
+                        <div class="filmes">
+                            
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                
+                                <img src="../img/Harry Potter_2.png" class="imgFilme" onclick="telafilme('2');"> 
+                                <div class="rodapeFilme">
+                                    <div class="rodapeCabecalhoFilme"> Harry Potter e as Relíquias da Morte: Parte 2 (2011) </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>9.3<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>130 MIN<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>DUB<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>12+<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="filmes">
+                            
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/VingadoresUltimato_2.png" class="imgFilme" onclick="telafilme('4');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Vingadores: Ultimato (2019) </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>9.4<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>181 MIN<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>DUB<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>12+<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="filmes">
+                            
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/DBS_Broly.png" class="imgFilme" onclick="telafilme('18');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Dragon Ball Super: Broly (2019) </div>
+                                
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8.5<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>100 MIN<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>DUB<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>10+<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="filmes">
+                            
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/Jurassic World Dominion_2.png" class="imgFilme" onclick="telafilme('19');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Jurassic World: Dominion (2022) </div>
+                                
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8.2<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>136 MIN<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>DUB<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>12+<h1>
+                                        </div>
+                                    </div>
+                                </div>                  
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="filmes">
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/Transformers A Vingança dos Derrotados_2.png" class="imgFilme" onclick="telafilme('20');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Transformers: A Vingança dos Derrotados (2009) </div>
+                                
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>7<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>150 MIN<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>DUB<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <h1>10+<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="translacionarFuncao('4')" class="setaFrente" id = seta8> ></button>
+                </div>                
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
        
        
 </body>
 <script src="../jquery-3.6.4.min.js"></script>
 <script src="filmes.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
+<script>
+    $(function() {
+        $("input").on("input.highlight", function() {
+            // Determine o termo de pesquisa especificado
+            var search = $(this).val();
+            // Highlight termo de pesquisa dentro de um contexto específico
+            $("#context").unmark().mark(search);
+        }).trigger("input.highlight").focus();
+    });
+
+
+</script>
 
 </html>
