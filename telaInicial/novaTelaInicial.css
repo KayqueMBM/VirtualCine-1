@@ -347,7 +347,7 @@ a{
     /* border: 2px solid #660708; */
     display: flex;
     justify-content: space-evenly;
-    z-index: 2;
+    z-index: 1;
     
 }
 .contentBotoes{
@@ -406,22 +406,19 @@ a{
 .d2
 {
     position: absolute;
-    top: 100px;
+    top: 160px;
     left: 0px;
     animation: gira2 5s infinite alternate;
     width: 0px;
     height: 200px;
     animation-delay: 0,5s;
-    z-index: 3;
+    z-index: 1;
 }
-@keyframes gira2{
-    
-    0%   {top: 100px; left: 0px; rotate: 0deg; }
-    
-    100% { top: 100px; left: 1100px; rotate: 360deg;
-            width: 0px; height: 0px;
-            }
-}
+@keyframes gira2 {
+    from {left: 0px;}
+    to {left: 600px;}
+  }
+
 .movie-item {
     display: block;
     position: relative;
@@ -553,3 +550,54 @@ a{
 .titulo4{
     text-align: center;
 }
+  
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

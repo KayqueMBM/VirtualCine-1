@@ -40,7 +40,19 @@
             <div class="cabecalhoLupa">
                 <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
             </div>
-            <a href="#" onclick="mostramenuperfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
+            <a href="#" onclick="openNav()"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
+            <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">Configurações</a>
+                  <a href="#">Histórico</a>
+                  <a href="#">Conta</a>
+                  <a href="#">Fale Conosco</a>
+                  <a href="novaTelaInicial.html">Sair</a>
+                </div>
+            </div>            
+            <!--<a href="#" onclick="mostramenuperfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>-->
         </div>
     </div>
     <div class="containerAbaPrincipal">
@@ -71,15 +83,17 @@
                 <div class="contentAbas"><h2>Pizza e Vinho </h2></div> 
             </div>
         </div>
-            <div class="containerAba2">
-                <div class="perfil" id ="perfil">
-                    <div class="contentAbas">Configurações</div>
-                    <div class="contentAbas">Histórico</div>
-                    <div class="contentAbas">Conta</div>
-                    <div class="contentAbas">Fale Conosco</div>
-                    <div class="contentAbas"><a href="novaTelaInicial.html">Sair</a></div>
-                </div>
+        <div class="containerAba2">
+            <div class="perfil" id ="perfil">
+                <!--
+                <div class="contentAbas">Configurações</div>
+                <div class="contentAbas">Histórico</div>
+                <div class="contentAbas">Conta</div>
+                <div class="contentAbas">Fale Conosco</div>
+                <div class="contentAbas"><a href="novaTelaInicial.html">Sair</a></div>
+                -->  
             </div>
+        </div>
             
     </div>
     <div class="content">
@@ -128,7 +142,7 @@
     <div class="containerFilmes">
         <div class="divFilmes">
             <a href="#" class="movie-item">
-                <img class="imgFilme" src="../img/2_Fast_2_Furious_2003.jpg" onclick="telafilme('1');">
+                <img class="imgFilme" src="../img/+ Velozes + Furiosos.jpg" onclick="telafilme('1');">
                 <div class="movie-item-content">
                     <div class="movie-item-title">
                         +Velozes +Furiosos
