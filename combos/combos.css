@@ -64,6 +64,35 @@ body{
     align-items: center;
 }
 
+.cabecalhoBusca{
+    height: 30%;
+    width: 100%;
+    border:solid 1px;
+    border-radius: 20px;
+    margin-right: 5%;
+    background-color: #A4161A;
+    display: flex;
+    align-items: center;
+    justify-items: right;
+}
+
+#txtBusca{
+    background-color:transparent;
+    outline: none;
+    border:none;
+
+    color: white;
+    width: 70%;
+    height: 100%;
+   
+    padding-left:10px;
+    font-size: 10px;
+}
+
+#txtBusca::placeholder{
+    color: whitesmoke;
+}
+
 .cabecalhoMeio{
     width: 33%;
     display: flex;
