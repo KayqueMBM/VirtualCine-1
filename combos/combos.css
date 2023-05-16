@@ -26,26 +26,13 @@ body{
 .cabecalho {
     width: 100%;
     height: 10%;
-    background: linear-gradient(-45deg, #000000, #6a040f, #370617, #03071e);
-    background-size: 400% 400%;
+    background-color: #0B090A;
     border-bottom: 5px solid white;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    animation: Gradient 8s ease infinite;
+    
 }
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
 
 .cabecalhoBorda{
     width: 25%;
@@ -54,6 +41,8 @@ body{
     font-size: 50px;
     display: flex;
     align-items: center;
+    justify-content: left;
+    margin-right: 50%;
 }
 .cabecalhoBorda2{
     width: 25%;
@@ -62,56 +51,31 @@ body{
 
     display: flex;
     align-items: center;
-}
-
-.cabecalhoBusca{
-    height: 30%;
-    width: 100%;
-    border:solid 1px;
-    border-radius: 20px;
-    margin-right: 5%;
-    background-color: #A4161A;
-    display: flex;
-    align-items: center;
-    justify-items: right;
-}
-
-#txtBusca{
-    background-color:transparent;
-    outline: none;
-    border:none;
-
-    color: white;
-    width: 70%;
-    height: 100%;
-   
-    padding-left:10px;
-    font-size: 10px;
-}
-
-#txtBusca::placeholder{
-    color: whitesmoke;
+    
 }
 
 .cabecalhoMeio{
     width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space;
     align-items: center;
 }
 
-.txtLogo{
-    
-    font-family: 'Quicksand', sans-serif;
-    
+.logoTexto{
+    width: 100%;
+    height: 100%;
     color: white;
-    text-align: center;
-    cursor: pointer;
-    transition: 1s;
+    font-size:40px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition : 1s;
 }
 
-.txtLogo:hover{
+.logoTexto:hover, .logoTexto img{
     transform: scale(1.1);
+    transition : 1s;
     cursor: pointer;
 }
 
@@ -177,13 +141,14 @@ body{
 }
 
 .botoesDivDivisoria img{
-    border-right: 1px solid rgba(255, 255, 255, 0.5); 
+    
     padding: 4%;
     
 }
 
 .botoesDivDivisoria:hover{
     border-bottom: 10px solid white ; 
+    
 }
 
 .fundoGradiente{
@@ -341,7 +306,7 @@ body{
 
 .containerImagens{
     width: 100%;
-    height: 300px;
+    height: 50%;
     opacity: 0%;
     display: flex;
     position: absolute;
@@ -350,17 +315,17 @@ body{
 }
 
 .fundoImagens{
-    width: 400px;
-    height: 400px;
+    width: 20%;
+    height: 100%;
     background-color: white;
     box-shadow: 0px 10px 20px 5px black;
 
 }
 
 .cabecalhoImagens{
-    width: 400px;
-    height: 75px;
-    font-size: 30px;
+    width: 100%;
+    height: 20%;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -370,9 +335,9 @@ body{
     color: #660708
 }
 .descricaoImagens{
-    width: 400px;
-    height: 50px;
-    font-size: 15px;
+    width: 100%;
+    height: 10%;
+    font-size: 12.5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,8 +350,8 @@ body{
 }
 
 .divDiagonal{
-    width: 400px;
-    height: 300px;
+    width: 20%;
+    height: 75%;
     background-color: white;
     clip-path: polygon(0% 0, 100% 0%, 0% 100%, 0 100%);
     position: absolute;
@@ -399,8 +364,8 @@ body{
 }
 
 .divDiagonalInv{
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 75%;
     background-color: white;
     display: flex;
     justify-content: left;
@@ -423,6 +388,7 @@ body{
 }
 h{
     border-bottom: 2px solid #A4161A;
+    font-weight: lighter;
 }
 h2{
     font-weight: lighter;
@@ -431,8 +397,8 @@ h2{
 }
 
 .rodapeImage{
-    width: 400px;
-    height: 50px;
+    width: 100%;
+    height: 15%;
     background-color: #660708 ;
 
 
@@ -445,8 +411,8 @@ h2{
 
 }
 .rodapePreco{
-    width: 400px;
-    height: 100px;
+    width: 100%;
+    height: 15%;
     background-color: white ;
  
 
@@ -457,6 +423,7 @@ h2{
     color:#660708 ;
     font-size: 30px;
     display: none;
+    font-weight: lighter;
     animation-name: rodapeImagemAnim;
     
     transition: 1s;
@@ -465,4 +432,52 @@ h2{
 .rodapeImage:hover + .rodapePreco{
     display: flex;
     
+}
+.cabecalhoBusca{
+    height: 30%;
+    width: 100%;
+    border:solid 1px;
+    border-radius: 20px;
+    margin-right: 5%;
+    background-color: #A4161A;
+    display: flex;
+    align-items: center;
+    justify-items: right;
+}
+.cabecalhoLupa{
+   
+    height: 50%;
+    width: 15%;
+    margin-right: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#txtBusca{
+    background-color:transparent;
+    outline: none;
+    border:none;
+
+    color: white;
+    width: 70%;
+    height: 100%;
+   
+    padding-left:10px;
+    font-size: 10px;
+}
+
+#txtBusca::placeholder{
+    color: whitesmoke;
+}
+.cabecalhoBorda2{
+    width: 25%;
+    /* border: 3px solid #A4161A; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
