@@ -5,27 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../planos/planos.css">
+    <link rel="stylesheet" href="../loading/loading.css">
     <title>Página de Planos</title>
 </head>
-<body onload="setaPos()" id="context">
+<body>
     <div id="preloader">
         <div class="inner">
+            <img src="../img/Logo.png" alt="" >
            <div class="bolas">
               <div></div>
               <div></div>
               <div></div>                    
            </div>
         </div>
-    </div>
+    </div>   
+
     <div class="principal">
         <div class="cabecalho">
             
             <div class="caixaL"> 
                 <div class="logoTexto" onclick="voltar();">VIRTUAL CINE</div>
             </div>
+
+            <div class="campoPlanos">
             <div class="plano1">
-        
+                <div class="planoTitulo">Plano Indivídual</div>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
             </div>
-    
+
+            <div class="plano2">
+                <div class="planoTitulo">Plano Duo</div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+
+            <div class="plano3">
+                <div class="planoTitulo">Plano Família</div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 </body>
+<script src="../jquery-3.6.4.min.js"></script>
+<script src="../loading/loading.js"></script>
 </html>

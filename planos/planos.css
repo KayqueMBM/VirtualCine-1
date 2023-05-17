@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
 body,html {
     margin: 0;
     padding: 0;
@@ -76,4 +79,283 @@ body,html {
     height: 5px;
     background-color: #A4161A;
     
+}
+
+.campoPlanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+}
+
+.plano1{
+    width: 400px;
+    height: 500px;
+    left: 150px;
+    background: linear-gradient(#660708, black);
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.plano1 span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #A4161A);
+    animation: card1 2s linear  infinite;
+}
+
+@keyframes card1 {
+    0%  {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.plano1 span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #A4161A);
+    animation: card2 2s linear  infinite;
+    animation-delay: 1s;
+}
+
+@keyframes card2 {
+    0%  {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.plano1 span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #A4161A);
+    animation: card3 2s linear  infinite;
+}
+
+@keyframes card3 {
+    0%  {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.plano1 span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #A4161A);
+    animation-delay: 1s;
+}
+
+@keyframes card4 {
+    0%  {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.plano2{
+    width: 400px;
+    height: 500px;
+    left: 700px;
+    background: linear-gradient(#660708, black);
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.plano2 span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #A4161A);
+    animation: card1 2s linear  infinite;
+}
+
+@keyframes card1 {
+    0%  {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.plano2 span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #A4161A);
+    animation: card2 2s linear  infinite;
+    animation-delay: 1s;
+}
+
+@keyframes card2 {
+    0%  {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.plano2 span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #A4161A);
+    animation: card3 2s linear  infinite;
+}
+
+@keyframes card3 {
+    0%  {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.plano2 span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #A4161A);
+    animation-delay: 1s;
+}
+
+@keyframes card4 {
+    0%  {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.plano3{
+    width: 400px;
+    height: 500px;
+    left: 1250px;
+    background: linear-gradient(#660708, black);
+    position: absolute;
+    overflow: hidden;
+}
+.plano3 span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #A4161A);
+    animation: card1 2s linear  infinite;
+    border-radius: 20px;
+}
+
+@keyframes card1 {
+    0%  {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.plano3 span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #A4161A);
+    animation: card2 2s linear  infinite;
+    animation-delay: 1s;
+}
+
+@keyframes card2 {
+    0%  {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.plano3 span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #A4161A);
+    animation: card3 2s linear  infinite;
+}
+
+@keyframes card3 {
+    0%  {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.plano3 span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #A4161A);
+    animation-delay: 1s;
+}
+
+@keyframes card4 {
+    0%  {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.planoTitulo {
+    width: 400px;
+    height: 50px;
+    background-color: #A4161A;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :white;
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
 }
