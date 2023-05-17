@@ -156,7 +156,7 @@ a{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 
 }
 /* O container do meio do cabeçalho */
@@ -231,8 +231,8 @@ a{
     display: flex;
     align-items: center;
     background-color: transparent;
+
     
- 
 }
 .cabecalhoPerfil:hover,.cabecalhoLupa:hover{
     box-shadow:  0px 4px 1px 0px white;
@@ -613,4 +613,12 @@ a{
     top: 15px;
     right: 35px;
     }
+  }
+  .sininho{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-right: 20% ;
+    width: 50px;
   }

@@ -109,3 +109,12 @@ input[type="submit"] {
 .template {
   display: none;
 }
+.voltar{
+  display: flex;
+  flex-direction: column;
+  color: #ff0000;
+  text-align: center;
+}
+.voltar:hover {
+  color: rgb(150, 0, 0);
+}
