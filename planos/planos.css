@@ -85,7 +85,7 @@ body,html {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 120vh;
+    min-height: 90vh;
 }
 
 .plano1{
@@ -95,7 +95,6 @@ body,html {
     background: linear-gradient(#660708, black);
     position: absolute;
     overflow: hidden;
-    border-radius: 20px;
 }
 .plano1 span:first-of-type{
     position: absolute;
@@ -180,7 +179,6 @@ body,html {
     background: linear-gradient(#660708, black);
     position: absolute;
     overflow: hidden;
-    border-radius: 20px;
 }
 .plano2 span:first-of-type{
     position: absolute;
@@ -274,7 +272,6 @@ body,html {
     height: 3px;
     background: linear-gradient(to right, transparent, #A4161A);
     animation: card1 2s linear  infinite;
-    border-radius: 20px;
 }
 
 @keyframes card1 {
@@ -357,5 +354,122 @@ body,html {
     color :white;
     z-index: 1;
     text-align: center;
-    border-radius: 20px;
+}
+
+.planoAssinante {
+    width: 400px;
+    height: 50px;
+    background-color: #fdf0d5;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :black;
+    z-index: 1;
+    text-align: center;
+}
+
+.planoData {
+    width: 400px;
+    height: 50px;
+    background-color: #fdf0d5;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :black;
+    z-index: 1;
+    text-align: center;
+}
+
+.planoStatus {
+    width: 400px;
+    height: 50px;
+    background-color: #fdf0d5;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :black;
+    z-index: 1;
+    text-align: center;
+}
+
+.planoAtivo {
+    width: 200px;
+    height: 80px;
+    background-color: #8ac926;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :white;
+    z-index: 1;
+    text-align: center;
+    transition: 1s;
+}
+
+.planoAtivo:hover,
+  .planoAtivo:focus {
+    background: #84a98c;
+  }
+
+.planoInativo {
+    width: 200px;
+    height: 80px;
+    background-color: #9e2a2b;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :white;
+    z-index: 1;
+    text-align: center;
+    transition: 1s;
+}
+
+.planoInativo:hover,
+  .planoInativo:focus {
+    background: #a44a3f;
+  }
+
+.planoCancelar {
+    width: 200px;
+    height: 80px;
+    background-color: #212529;
+    font-size: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :#A4161A;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.planoCancelar:hover,
+  .planoCancelar:focus {
+    background: #cad2c5;
+  }
+
+
+.nome{
+    color: white;
+    text-align: center;
+}
+.data{
+    color: white;
+    text-align: center;
 }
