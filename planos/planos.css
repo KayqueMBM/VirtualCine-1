@@ -91,7 +91,7 @@ body,html {
 .plano1{
     width: 400px;
     height: 500px;
-    left: 150px;
+    left: 100px;
     background: linear-gradient(#660708, black);
     position: absolute;
     overflow: hidden;
@@ -175,7 +175,7 @@ body,html {
 .plano2{
     width: 400px;
     height: 500px;
-    left: 700px;
+    left: 600px;
     background: linear-gradient(#660708, black);
     position: absolute;
     overflow: hidden;
@@ -259,7 +259,7 @@ body,html {
 .plano3{
     width: 400px;
     height: 500px;
-    left: 1250px;
+    left: 1100px;
     background: linear-gradient(#660708, black);
     position: absolute;
     overflow: hidden;
