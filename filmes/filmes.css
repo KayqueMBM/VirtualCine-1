@@ -280,8 +280,16 @@ h{
 .setaTras{
     transform: translateX(-2000%);
 }
-.setaFrente:hover {background-color: #0b090a7a; }
-.setaTras:hover {background-color: #0b090a7a; }
+
+.setaFrente:hover,
+  .setaFrente:focus {
+    color: black;
+  }
+  .setaTras:hover,
+  .setaTras:focus {
+    color: black;
+  }
+
 .cabecalhoBusca{
     height: 30%;
     width: 100%;
