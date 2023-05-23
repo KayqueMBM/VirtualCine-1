@@ -268,12 +268,13 @@ h{
     height: 50px;
     font-size: 50px;
     background-color: transparent;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
+    color: #e63946;
+    font-family: monospace;
     border: 0px;
     cursor:pointer;
     z-index: 2;
     position: absolute;
+    border-radius: 20px;
    
 }
 .setaTras{
