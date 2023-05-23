@@ -425,7 +425,7 @@ a{
     width: 0px;
     height: 200px;
     animation-delay: 0,5s;
-    z-index: 1;
+    z-index: -1;
 }
 @keyframes gira2 {
     from {left: 0px;}
