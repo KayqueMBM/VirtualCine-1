@@ -545,6 +545,10 @@ a{
     border-radius: 50%;
     background-color: var(--text-color);
     color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .social-item:hover {

@@ -6,8 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Form de Registro com validações em JS</title>
   <link rel="stylesheet" href="cadastro.css">
+  <link rel="stylesheet" href="../loading/loading.css">
 </head>
 <body>
+  <div id="preloader">
+    <div class="inner">
+        <img src="../img/Logo.png" alt="" >
+       <div class="bolas">
+          <div></div>
+          <div></div>
+          <div></div>                    
+       </div>
+    </div>
+</div>
   <div id="main-container">
     <h1>Cadastre-se para acessar o sistema</h1>
     <form id="register-form" action="cadastro.php" method="post">
@@ -64,6 +75,8 @@
     // }
 
   </script>
+  <script src="../jquery-3.6.4.min.js"></script>
+  <script src="../loading/loading.js"></script>
 </body>
 
 </html>
