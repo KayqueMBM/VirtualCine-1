@@ -45,18 +45,18 @@ h2{
 /* Texto da Logo */
 .txtLogo{
     font-size:40px;
-    font-family: 'Quicksand', sans-serif;
-    
+    font-family: "Cairo", sans-serif;
     color: white;
     text-align: center;
     cursor: pointer;
+    font-weight: 900;
 }
 
 .txtLogo:hover{font-size: 41px;}
 
 .txtBotoes , .txtBotoesC{
     font-size: 20px;
-    font-family: 'Cinzel', sans-serif;
+    font-family: "Cairo", sans-serif;
     cursor: pointer;
     color: white;
     text-align: center;
@@ -64,7 +64,7 @@ h2{
     display: flex;
     justify-content: center;
     transition: .5s;
-    
+    font-weight: 900;
 }
 
 .txtBotoes:hover,.txtBotoesC:hover{
@@ -74,11 +74,10 @@ h2{
 
 .txtBotoesC{
     align-items: center;
-    
     font-size: 25px;
     height: 100%;
     width: 100%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
 }
 
 .textoSlogan{
@@ -89,13 +88,14 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    font-family: "Cairo", sans-serif;
     animation: animate 1.5s linear infinite;
+    font-weight: 900;
 }
 .piscar{
     font-size: larger;
-    font-family: 'Quicksand', serif;
+    font-family: "Cairo", sans-serif;
     color:#070000;
     animation: animate 1.5s linear infinite;
     }
@@ -171,10 +171,8 @@ a{
 .cabecalhoBotoes{
     display: flex;
     width: 25%;
-
-   
     font-size:15px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
     font-weight: normal;
     text-align: center;
 }
@@ -185,13 +183,12 @@ a{
 .flecha{
    
     font-size: 25px;
-    
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
     color: white;
     display: flex;
     cursor: pointer;
     transition: 1s;
-   
+    font-weight: 700;
 }
 
 .flecha:hover{color: #660708; transform: rotate(90deg);}
@@ -212,11 +209,9 @@ a{
     background-color:transparent;
     outline: none;
     border:none;
-
     color: white;
     width: 70%;
     height: 100%;
-   
     padding-left:10px;
     font-size: 10px;
 }
@@ -231,15 +226,13 @@ a{
     display: flex;
     align-items: center;
     background-color: transparent;
-
-    
 }
+
 .cabecalhoPerfil:hover,.cabecalhoLupa:hover{
     box-shadow:  0px 4px 1px 0px white;
 }
 
 .cabecalhoLupa{
-   
     height: 50%;
     width: 15%;
     margin-right: 10%;
@@ -277,7 +270,6 @@ a{
 } 
 
 .containerAbaPrincipal{
-    
     width: 100%;
     height: 100%;
     /* border: 2px solid #660708; */
@@ -285,32 +277,26 @@ a{
     display: flex;
     justify-content: space-around;
     margin-top: 9%;
-   
-   
-   
 }
+
 .containerAba,.containerAba2{
     position: absolute;
     width: 33%;
     height: 50%;
     /* border: 2px solid #660708; */
-    
     display: flex;
     justify-content: space-around;
-
 }
+
 .containerAba2{
     right: 1%;
     /* border: 2px solid #660708; */
-
     justify-content: right;
-    
 }
 
 .perfil{
     height: 60%;
     width: 20%;
-    
     background-color: white;
     transform: translate(0%,-100%);
 }
@@ -324,22 +310,21 @@ a{
     align-items: center;
     flex-direction: column;
     transform: translate(0%,-100%);
-  
 }
+
 .contentAbas{
     width: 100%;
     height: 20%;
     border-left: 5px solid #A4161A;
     box-shadow:  0px 0px 4px 0px #000000;
     background-color: white;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
-    
+    color: black;
+    font-family: "Cairo", sans-serif;
 }
 
 .contentAbas:hover{border-left: 10px solid #A4161A;}
@@ -348,8 +333,6 @@ a{
     width: 100%;
     height: 70%;
     display: flex;
-    
-    
     justify-content: center;
     align-items: center;
 }
@@ -360,9 +343,9 @@ a{
     /* border: 2px solid #660708; */
     display: flex;
     justify-content: space-evenly;
-    z-index: 1;
-    
+    z-index: 1;  
 }
+
 .contentBotoes{
     width: 35%;
     height: 65%;
@@ -387,7 +370,8 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
 }
 .containerFilmes{
     width: 100%;
@@ -402,32 +386,30 @@ a{
     height: 100%;
     width: 20%;
     /* border: 2px solid #660708; */
-   
 }
 
 .imgFilme{
     height: 100%;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .icone3d{
-    position: absolute;
-  
-    
+    position: absolute; 
 }
+
 .d2
 {
     position: absolute;
     top: 120px;
     left: 0px;
-    animation: gira2 5s infinite alternate;
+    animation: animacao 5s infinite alternate;
     width: 0px;
     height: 200px;
     animation-delay: 0,5s;
     z-index: -1;
 }
-@keyframes gira2 {
+
+@keyframes animacao {
     from {left: 0px;}
     to {left: 600px;}
   }
@@ -497,7 +479,8 @@ a{
 }
 .movie-info ~ .movie-info {
     margin-left: 5px;
-}        
+}
+
 .barra_branca{
     width: 100%;
     height: 2%;
@@ -505,19 +488,26 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
 }
+
 .rodape{
     width: 100%;
     height: 270px;
     color: white;
     font-size: 25px;
     background-color: #221f1f;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 900;
 }
+
+.txtRodape{
+    color: #A4161A;
+}
+
 .footer-menu {
     list-style-type: none;
 }
@@ -603,6 +593,8 @@ a{
     color: white;
     display: block;
     transition: 0.3s;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
   }
   
   .overlay a:hover, .overlay a:focus {
@@ -642,6 +634,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
   }
 
   .main-color {

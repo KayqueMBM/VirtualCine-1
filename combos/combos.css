@@ -26,12 +26,24 @@ body{
 .cabecalho {
     width: 100%;
     height: 10%;
-    background-color: #0B090A;
+    background: linear-gradient(-45deg, #000000, #6a040f, #370617, #03071e);
     border-bottom: 5px solid white;
+    background-size: 400% 400%;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    
+    animation: Gradient 8s ease infinite;
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .cabecalhoBorda{
@@ -44,14 +56,13 @@ body{
     justify-content: left;
     margin-right: 50%;
 }
+
 .cabecalhoBorda2{
     width: 25%;
     height: 100%;
     /* border: 3px solid #A4161A; */
-
     display: flex;
     align-items: center;
-    
 }
 
 .cabecalhoMeio{
@@ -66,7 +77,7 @@ body{
     height: 100%;
     color: white;
     font-size:40px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,31 +98,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-   
 }
 
 .divDivisoriaMetade,.divDivisoriaMetade2{
     width: 75%;
     height: 30%;
-   
     flex-direction: row;
     display: flex;
     justify-content: center;
-   
-    
 }
+
 .divDivisoriaMetade2{
-    
     background-color: rgba(255, 255, 255, .95);
     height: 50%;
-    font-family: 'Quattrocento', serif;
+    font-family: "Cairo", sans-serif;
     font-size: 30px;
-    
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 30px 5px black;
-
     font-weight: lighter;
     align-items: center;
 }
@@ -127,7 +131,7 @@ body{
     color: white;
     margin: 1%;
     margin-bottom: 2.5%;
-    font-family: 'Quattrocento', serif;
+    font-family: "Cairo", sans-serif;
     font-size: 20px;
     cursor:pointer;
     transition: .1s;
@@ -137,83 +141,67 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    font-weight: 900;
 }
 
 .botoesDivDivisoria img{
-    
     padding: 4%;
-    
 }
 
 .botoesDivDivisoria:hover{
     border-bottom: 10px solid #A4161A; 
-    
 }
 
 .fundoGradiente{
     background-color: #A4161A;
-    
     width: 100%;
     height: 750px;
     background-image: linear-gradient(to bottom,#E5383B , #A4161A,#660708);
     display: flex;
     justify-content: center;
- 
 }
+
 .metadeGradiente{
     color:white;
     width: 55%;
     font-size: 70px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
- 
-    
-    
 }
 
 .metadeGradienteRodape{
-    
-    
-   
     padding: 1%;
     margin-bottom: 1%;
     height: 15%;
-    
     position: absolute;
     display: flex;
     align-self: flex-end;
     flex-direction: column;
     justify-content: space-around;
-   
     background-color: white;
     border-bottom: 10px solid #E5383B;
-    
 }
+
 .metadeGradienteRodapeTexto,.metadeGradienteRodapeTexto2{
     width: 100%;
     height: 40%;
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     color: black;
- 
     margin-left: 5%;
     font-size: 80px;
-    
 }
+
 .metadeGradienteRodapeTexto2{
-    
     font-size: 20PX;
 }
 
 .metadeGradienteMetade{
     height: 100%;
     width: 50%;
-   
     display: flex;
     overflow: hidden;
 }
@@ -222,7 +210,7 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    font-family: 'Quattrocento', serif;
+    font-family: "Cairo", sans-serif;
     text-transform: 5px;
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.7), transparent);
     backdrop-filter: blur(4px);
@@ -232,27 +220,28 @@ body{
 
     align-items: center;
 }
+
 .gradienteDescricao{
     display: flex;
     position: absolute;
     top: 40%;
     font-size: 30px;
     border-bottom: 2px solid white;
+    font-family: "Cairo", sans-serif;
 }
+
 .metadeGradiente2{
     width :45%;
-   
-    
     height: 100%;
     /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
-   
     justify-content: center;
     align-items: center;
     color:whitesmoke;
     font-size: 100px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
 }
 
 .divCarrinho{
@@ -279,13 +268,10 @@ body{
     background-color: white;
 }
 
-
 .rodape {
     width:100%;
     height: 75px;
     position: fixed;
-    
-    
     background-color: #A4161A;
     bottom: 0px;
     display: flex;
@@ -293,14 +279,13 @@ body{
     align-items: center;
     color:whitesmoke;
     font-size: 50px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Cairo", sans-serif;
     cursor: pointer;
     transition: 1s;
     z-index: 2;
 }
 .rodape:hover{
     height: 90px;
-    
 }
 
 .containerImagens{
@@ -329,23 +314,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Quicksand', sans-serif;
-   
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
     color: #660708
 }
 .descricaoImagens{
     width: 100%;
     height: 10%;
-    font-size: 12.5px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    font-family: 'Quicksand', sans-serif;
-    
+    font-family: "Cairo", sans-serif;
     color: #660708;
-    
+    font-weight: 900;
 }
 
 .divDiagonal{
@@ -392,7 +375,6 @@ h{
 h2{
     font-weight: lighter;
     font-size: 24px;
-    
 }
 
 .rodapeImage{
@@ -405,15 +387,12 @@ h2{
     justify-content: center;
     align-items: center;
     color: white;
-   
-
 }
+
 .rodapePreco{
     width: 100%;
     height: 15%;
     background-color: white ;
- 
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,14 +402,14 @@ h2{
     display: none;
     font-weight: lighter;
     animation-name: rodapeImagemAnim;
-    
     transition: 1s;
     animation-duration: 1s;
 }
+
 .rodapeImage:hover + .rodapePreco{
     display: flex;
-    
 }
+
 .cabecalhoBusca{
     height: 30%;
     width: 100%;
@@ -442,8 +421,8 @@ h2{
     align-items: center;
     justify-items: right;
 }
+
 .cabecalhoLupa{
-   
     height: 50%;
     width: 15%;
     margin-right: 10%;
@@ -451,20 +430,18 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-  
 }
 
 #txtBusca{
     background-color:transparent;
     outline: none;
     border:none;
-
     color: white;
     width: 70%;
     height: 100%;
-   
     padding-left:10px;
-    font-size: 10px;
+    font-size: 20px;
+    font-family: "Cairo", sans-serif;
 }
 
 #txtBusca::placeholder{
@@ -473,9 +450,7 @@ h2{
 .cabecalhoBorda2{
     width: 45%;
     /* border: 3px solid #A4161A; */
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
