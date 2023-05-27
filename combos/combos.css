@@ -118,6 +118,8 @@ body{
     box-shadow: 0px 0px 30px 5px black;
     font-weight: lighter;
     align-items: center;
+    color: #c1121f;
+    font-weight: 900;
 }
 
 
@@ -125,7 +127,7 @@ body{
     width: 25%;
     height: 55%;
     display: flex;
-    background-color: #0a0908;
+    background-color: #bb3e03;
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -303,7 +305,6 @@ body{
     height: 100%;
     background-color: white;
     box-shadow: 0px 10px 20px 5px black;
-
 }
 
 .cabecalhoImagens{
@@ -316,7 +317,7 @@ body{
     align-items: center;
     font-family: "Cairo", sans-serif;
     font-weight: 900;
-    color: #660708
+    color: #c1121f;
 }
 .descricaoImagens{
     width: 100%;
@@ -327,8 +328,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Cairo", sans-serif;
-    color: #660708;
-    font-weight: 900;
+    color: #c1121f;
+    font-weight: 700;
 }
 
 .divDiagonal{
@@ -387,6 +388,8 @@ h2{
     justify-content: center;
     align-items: center;
     color: white;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
 }
 
 .rodapePreco{
@@ -404,6 +407,7 @@ h2{
     animation-name: rodapeImagemAnim;
     transition: 1s;
     animation-duration: 1s;
+    font-family: "Cairo", sans-serif;
 }
 
 .rodapeImage:hover + .rodapePreco{
@@ -440,7 +444,7 @@ h2{
     width: 70%;
     height: 100%;
     padding-left:10px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Cairo", sans-serif;
 }
 
