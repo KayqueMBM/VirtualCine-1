@@ -16,9 +16,10 @@ body {
     padding: 0;
     margin:  0;
     width: 100%;
-    height: 200vh;
+    height: 357vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .desliza{
@@ -38,10 +39,12 @@ body {
 
 h2{
     border-bottom: 1px solid #A4161A;
-    font-family: 'Cinzel', serif;
+    font-family: "Cairo", sans-serif;
     font-size: 10px; 
     text-align: center;
+    font-weight: 900;
 }
+
 /* Texto da Logo */
 .txtLogo{
     font-size:40px;
@@ -50,6 +53,7 @@ h2{
     text-align: center;
     cursor: pointer;
     font-weight: 900;
+    transition: 1s;
 }
 
 .txtLogo:hover{font-size: 41px;}
@@ -88,11 +92,13 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Cairo", sans-serif;
     animation: animate 1.5s linear infinite;
+    z-index: -1;
     font-weight: 900;
 }
+
 .piscar{
     font-size: larger;
     font-family: "Cairo", sans-serif;
@@ -111,19 +117,20 @@ h2{
         opacity: 0;
     }
 }
-        /* Cabeçalho */
+
 .cabecalho{
     width: 100%;
-    height: 10%;
+    height: 15%;
     background: linear-gradient(-45deg, #000000, #6a040f, #370617, #03071e);
     background-size: 400% 400%;
-    border-bottom: 5px solid #A4161A;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
     animation: Gradient 8s ease infinite;
 }
+
 @keyframes Gradient {
     0% {
         background-position: 0% 50%
@@ -136,16 +143,15 @@ h2{
     }
 }
 
-
 a{
     color: red;
     text-decoration: none;
 }
+
 /* Os containers das pontas do cabeçalho. */
 .cabecalhoBorda{
     width: 25%;
     /* border: 3px solid #A4161A; */
-
     display: flex;
     align-items: center;
 }
@@ -153,41 +159,54 @@ a{
 .cabecalhoBorda2{
     width: 25%;
     /* border: 3px solid #A4161A; */
-
     display: flex;
     align-items: center;
     justify-content: right;
 
 }
+
 /* O container do meio do cabeçalho */
 .cabecalhoMeio {
     width: 33%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
 }
+
 /* Os botoes do cabeçalho */
 .cabecalhoBotoes{
     display: flex;
     width: 25%;
-    font-size:15px;
+    font-size:20px;
     font-family: "Cairo", sans-serif;
     font-weight: normal;
     text-align: center;
 }
+
 .cabecalhoBotoes:hover + .txtBotoes{
     color: #A4161A;
 }
 
+.textoConfig{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    font-size: 50px;
+    color: white;
+    font-family: "Cairo", sans-serif;
+}
+
 .flecha{
-   
     font-size: 25px;
     font-family: "Cairo", sans-serif;
     color: white;
     display: flex;
     cursor: pointer;
-    transition: 1s;
+    position: relative;
+    transition: .5s;
     font-weight: 700;
 }
 
@@ -240,34 +259,99 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-  
 }
 
 .content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: #0B090A;
+    flex-direction: row;
+    height: 50%;
+    width: 500%;
+    margin-top: 5%;
+}
+
+.containerSlides{
+    width: 500%;
+    height: 80%;
+    display: flex;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 35%;
-}
-.contentMetade,.contentMetade2{
- 
-    width: 50%;
-    height: 100%;
-    /* border: 2px solid #660708; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
-    overflow: hidden;
-    
 }
-.contentMetade2{
-    z-index: 0;
+
+.slidesGrad{
+   overflow: hidden;
+    position: absolute;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.95));
+    z-index: 1;
+    width: 20%;
+    height: 100%;
+}
+
+.slides{
+    width: 20%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.planosQuad{
+    height: 10%;
+    width: 20%;
+    transition: 1s;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #A4161A ,#660708);
     display: flex;
-    flex-direction: row;
-} 
+    position:absolute;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    font-family: "Cairo", sans-serif;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 30px;
+    top: 70%;
+    z-index: 2;
+    margin-top: 2.5%;
+    padding-top: 1%;
+    font-weight: 900;
+}
+
+.planosQuad:hover{
+    transition: 1.5s;
+    height: 60%;
+    width: 60%;
+    background-color: #0B090A;
+}
+
+.planosQuad:hover .beneficios,.planosQuad:hover .beneficios2{
+    opacity: 100;
+    transition: 1s;
+}
+
+.planosQuad:hover h5{
+    margin-top: 0%;
+}
+
+h4,h5{
+    display: flex;
+    font-family: "Cairo", sans-serif;
+    font-size: 30px;
+    font-weight: lighter; 
+    margin: 3%;
+    font-weight: 900;
+}
+
+h5{
+    font-family: "Cairo", sans-serif;
+    font-size: 30px;
+    margin-top: 12%;
+}
+
+.slides img{
+    position: cover;
+    position: relative;
+}
 
 .containerAbaPrincipal{
     width: 100%;
@@ -277,12 +361,12 @@ a{
     display: flex;
     justify-content: space-around;
     margin-top: 9%;
+    z-index: -1;
 }
 
 .containerAba,.containerAba2{
-    position: absolute;
-    width: 33%;
-    height: 50%;
+    width: 25%;
+    height: 40%;
     /* border: 2px solid #660708; */
     display: flex;
     justify-content: space-around;
@@ -299,35 +383,44 @@ a{
     width: 20%;
     background-color: white;
     transform: translate(0%,-100%);
+    position: relative;
 }
 
 .categorias,.destaques,.combos{
     height: 100%;
-    width: 25%;
-    background-color: white;
-    display: flex;
+    width: 45%;
+    position: absolute;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translate(0%,-100%);
+    transform: translate(0%,-100%); 
+    position: relative;
 }
 
 .contentAbas{
     width: 100%;
-    height: 20%;
-    border-left: 5px solid #A4161A;
+    height: 180%;
+    border-left: 5px solid white;
     box-shadow:  0px 0px 4px 0px #000000;
-    background-color: white;
+    background-color: white ;
+    color: #0B090A;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     cursor: pointer;
-    color: black;
-    font-family: "Cairo", sans-serif;
+    transition: .1s;
+    border-left: 5px solid #A4161A; 
 }
 
 .contentAbas:hover{border-left: 10px solid #A4161A;}
+
+h3{
+    font-size: 10px;
+    font-family: "Cairo", sans-serif;
+    margin-left: 10%;
+}
 
 .containerSlogan{
     width: 100%;
@@ -336,6 +429,7 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 .containerBotoes{
     width: 100%;
     height: 20%;
@@ -343,18 +437,18 @@ a{
     /* border: 2px solid #660708; */
     display: flex;
     justify-content: space-evenly;
-    z-index: 1;  
+    z-index: 2;
 }
 
 .contentBotoes{
-    width: 35%;
+    width: 55%;
     height: 65%;
-    background-color:#A4161A;
+    background-image: linear-gradient(to bottom, #A4161A ,#660708);
     border-radius: 25px;
     cursor: pointer;
     transition: 0.5s;
-    
 }
+
 .contentBotoes:hover{
     cursor: pointer;
     box-shadow:  0px 0px 4px 0px #000000;
@@ -362,57 +456,17 @@ a{
     color: white;
 }
 
-.barra_separa_secao{
+.contentSlides{
     width: 100%;
-    height: 5%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-family: "Cairo", sans-serif;
-    font-weight: 700;
-}
-.containerFilmes{
-    width: 100%;
-    height: 30%;
-    /* border: 4px solid #660708; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.divFilmes{
     height: 100%;
-    width: 20%;
-    /* border: 2px solid #660708; */
-}
-
-.imgFilme{
-    height: 100%;
-    width: 100%; 
-}
-
-.icone3d{
-    position: absolute; 
-}
-
-.d2
-{
     position: absolute;
-    top: 120px;
-    left: 0px;
-    animation: animacao 5s infinite alternate;
-    width: 0px;
-    height: 200px;
-    animation-delay: 0,5s;
-    z-index: -1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  
 }
-
-@keyframes animacao {
-    from {left: 0px;}
-    to {left: 600px;}
-  }
 
 .movie-item {
     display: block;
@@ -483,7 +537,7 @@ a{
 
 .barra_branca{
     width: 100%;
-    height: 2%;
+    height: 200px;
     background-color: transparent;
     justify-content: center;
     align-items: center;
@@ -637,7 +691,7 @@ a{
 
   .rodapeFinal {
     width: 100%;
-    height: 50px;
+    height: 100px;
     background: #6a040f;
     color: white;
     display: flex;
@@ -650,4 +704,334 @@ a{
 
   .main-color {
     color: var(--main-color);
+}
+
+h2{
+    font-size: 30px;
+    font-family: "Cairo", sans-serif; 
+    border: none;
+    font-weight: lighter;
+}
+
+.botaoAssinar{
+    width: 20%;
+    height: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#BA181B,#540b0e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 1.5%;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+}
+
+.botaoAssinar:hover,
+  .botaoAssinar:focus {
+    background: #540b0e;
+  }
+
+h1{
+    font-size: 60px;
+    font-family: "Cairo", sans-serif;
+    color:white;
+    font-weight: 400;
+    height: 20px;
+    z-index: 1;
+    font-weight: 900;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+}
+
+.menuPerfil{
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    backdrop-filter: blur(10px);
+    z-index: 14;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.perfilSel{
+    color: white;
+    width: 25%;
+    font-weight: lighter;
+    padding-left: 1%;
+    height: 10%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 7.5%;
+    transition: 1s;
+}
+
+.perfilSel:hover{
+    transition: .1s;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    /* border-bottom: 1px solid white; */
+}
+
+.containerPlanos{
+    width: 100%;
+    height: 35%; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    background-image: linear-gradient(to bottom, #0B090A,#161A1D);
+    justify-content: center;
+}
+
+.planosCabecalho{
+    width: 70%;
+    height: 20%;
+    background-color: #161A1D;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    justify-content: space-between;
+}
+
+.planosEscolhas,.planosEscolhas2{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161A1D;
+    transition: 1s;
+}
+
+.planosEscolhas2{
+    background-color: #A4151A;
+}
+
+.pEscolhaMetade,.pEscolhaMetade2,.pEscolhaMetade3{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    color: white;
+}
+
+.pEscolhaMetade2,.pEscolhaMetade3{
+    margin-top: 2%;
+    margin-left: 7.5%;
+    font-family: "Cairo", sans-serif;
+    color: #D3D3D3;
+}
+
+.pEscolhaMetade3{
+    font-size: 15px;
+}
+
+.planosContent{
+    display: flex;
+    width: 70%;
+    height: 80%;
+}
+
+h4{
+    color: white;
+    font-family: "Cairo", sans-serif;
+}
+
+.planosMetade{
+    height: 100%;
+    width : 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.beneficios,.beneficios2{
+    width: 100%;
+    height: 40%;
+    opacity: 0;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #0B090A,#161A1D);
+}
+
+.beneficios2 {
+    background-image: linear-gradient(to left, #0B090A,#161A1D);
+}
+
+.beneficiosIcon{
+    height: 80%;
+    margin-left: 1%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left,#BA181B,#660708);
+}
+
+.beneficiosC{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+p{
+    margin: 3.1%;
+}
+
+.beneficiosMetade,.beneficiosMetade2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.beneficiosMetade2{
+    justify-content: end;
+}
+
+.planosCombos{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+}
+
+.planoPreco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    justify-content : center;
+    background-color: #A4161A;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+}
+
+.planosOpcoes{
+    width: 100%;
+    height: 27.5%;
+    /* background-image: linear-gradient(to top, #0B090A,#161A1D); */
+    background-color: #161A1D;
+    display: flex;
+    cursor: pointer;
+    z-index: 3;
+    transition: 2s;
+}
+
+.planosOpcoes:hover{
+    background-color: #161A1D;
+    background-image: none;
+    transition: 2s;
+}
+
+.planosC{
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planosCheck{
+    width: 25%;
+    height: 20%;
+    border-radius : 50%;
+    border: 2px solid white;
+}
+
+.planosTextoC{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+}
+
+.planosTexto,.planosTexto2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: "Cairo", sans-serif;
+}
+
+.planosTexto2{
+    color:#D3D3D3;
+    font-family: "Cairo", sans-serif;
+}
+
+.combosQuad{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.combosBotoes{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.combosQuadI{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+} 
+
+.combosQuadB{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Cairo", sans-serif;
+    background-color: #0B090A;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.combosQuadB:hover{
+    background-color: #161A1D;
+    transition: 1s;
+}
+
+.planosTexto{
+    height: 30%;
+    color: white;
+    font-size: 25px;
 }
