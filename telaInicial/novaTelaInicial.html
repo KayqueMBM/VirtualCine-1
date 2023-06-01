@@ -4,80 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-    <!-- BOX ICONS -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- BOOTSTRAP -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- APP CSS -->
     <link rel="stylesheet" href="novaTelaInicial.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <title>Virtual Cine</title>
 </head>
 <body onload="VerificaBotoes()">
-    <div class="cabecalho">
+    
+    <div class="menuPerfil" id="menuPerfil" >
+       
+        <div class="perfilSel" onclick="window.location='../configuracoes/configuracoes.html';">Configurações</div>
+        <div class="perfilSel">Planos</div>
+        <div class="perfilSel">Conta</div>
+        <div class="perfilSel">Fale Conosco</div>
+        <div class="perfilSel" onclick="FecharPerfil()">Sair</div>
+    </div>
+    
+
+    <div class="cabecalho" id="cabe">
         
         <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
-            <div class="txtLogo"><i class='bx bx-movie-play bx-tada main-color'></i>Virtual<span class="main-color">Cine</span></div>
+            <img src="../img/Logo.png"  height="50%">
         </div>
         
         <div class="cabecalhoMeio">
             <!-- Categorias -->
-            <div class="cabecalhoBotoes" ><div class="txtBotoes"><span onclick="abrirTela('filmes','filmes.html');">CATEGORIAS</span></div></div>
-            <span class="flecha" onclick="mostramenucategoria();">></span>
+            <div class="cabecalhoBotoes" ><div class="txtBotoes"><div onclick="abrirTela('filmes','filmes.html');">CATEGORIAS</div></div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('categorias','100%');">></div>
             <!-- Combos -->
-            <div class="cabecalhoBotoes"><div class="txtBotoes"><span onclick="abrirTela('combos','combos.html');" >COMBOS</span></div></div>
-            <span class="flecha" onclick="mostramenucombo();">></span>
+            <div class="cabecalhoBotoes"><div class="txtBotoes"><div onclick="abrirTela('combos','combos.html');" >COMBOS</div></div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('combos','100%');">></div>
         </div>
 
-        <div class="cabecalhoBorda2">
-            <div class="notificacao">
-                1
-            </div>
-            <img src="../img/Sininho.png" width=45px class="sininho"></a>
-            <a href="#" onclick="openNav()"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
-            <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>-->
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="#">Configurações</a>
-                  <a href="../planos/planos.html">Planos</a>
-                  <a href="#">Conta</a>
-                  <a href="#">Fale Conosco</a>
-                  <a href="novaTelaInicial.html">Sair</a>
-                </div>
-            </div>            
-            <!--<a href="#" onclick="mostramenuperfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>-->
-        </div>
-    </div>
-    <div class="containerAbaPrincipal">
-        <div class="containerAba">
-            <!-- Categorias -->
-            <div class="categorias" id="categorias">
+        
+        <div class="cabecalhoBorda2" >
+            <!-- <div class="cabecalhoBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
                 
-                <div class="contentAbas"><h2><b>Aventura</b></h2></div>
-                <div class="contentAbas"><h2><b>Terror</b></h2></div>
-                <div class="contentAbas"><h2><b>Ação</b></h2></div>
-                <div class="contentAbas"><h2><b>Romance</b></h2></div>
-                <div class="contentAbas"><h2><b>Comédia</b></h2></div>               
-            </div>
-            <!-- Destaques -->
-            <div class="destaques"id="destaques">
-                <div class="contentAbas"><h2><b>Gato de Botas 2</b></h2></div>
-                <div class="contentAbas"><h2><b>Mad Max</b></h2></div>
-                <div class="contentAbas"><h2><b>Enrolados</b></h2></div>
-                <div class="contentAbas"><h2><b>Titanic</b></h2></div>
-                <div class="contentAbas"><h2><b>Harry Potter</b></h2></div> 
-            </div>
-            <!-- Combos -->
-            <div class="combos"id="combos">
-                <div class="contentAbas"><h2><b>Burguer e CocaCola</b></h2></div>
-                <div class="contentAbas"><h2><b>Pastel e caldo de cana</b></h2></div>
-                <div class="contentAbas"><h2><b>Tacos e churros</b></h2></div>
-                <div class="contentAbas"><h2><b>Hot Dog e suco</b></h2></div>
-                <div class="contentAbas"><h2><b>Pizza e Vinho</b></h2></div> 
-            </div>
+            </div> -->
+            <!-- <div class="cabecalhoLupa">
+                <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
+            </div> -->
+            <div class="botaoCadastro" onclick ="abrirTela('login','login.html');" id="entrar">ENTRE</div>
+    
+            <div class="notificacao" id="notificacao"> 1</div>
+            <img id="sininho" src="../img/Sininho.png" width=45px class="sininho" ></a>
+            <a href="#"  onclick="MostrarPerfil();"><img src="../img/Perfil.png" id="perfil" width=45px class="cabecalhoPerfil"></a>
         </div>
-        <a href="#" onclick="MostrarPerfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
         <div class="containerAbaPrincipal">
             <div class="containerAba">
                 <!-- Categorias -->
@@ -108,7 +81,7 @@
     <div class="contentSlides">
         <h1>ASSISTA EM CASA</h1>
         <p>OS MELHORES FILMES EM 3D</p>
-        <div class="botaoAssinar" onclick ="abrirTela('login','login.html');">Assinar</div>
+        <div class="botaoAssinar">Assine</div>
     </div>
     <div class="content">
         
@@ -135,14 +108,14 @@
             </div>
             <div class="slides">
                 <div class="slidesGrad"></div>
-                <img src="../img/FAST 2.jpg"  width="100%">
+                <img src="../img/FAST 2.jpg"  width="100%" >
             </div>
         </div>
        
     </div>
     
     <div class="planosQuad">
-        <h5>Benefícios</h5>
+        <h5>Benefícios </h5>
         <div class="beneficios">
             <div class="beneficiosIcon">
                 <img src="../img/america.png" height="80%">
@@ -160,7 +133,7 @@
         <div class="beneficios2">
             <div class="beneficiosC">
                 <div class="beneficiosMetade2">
-                    <h4>Confiavel</h4>
+                    <h4>CONFIÁVEL</h4>
                 </div>
                 <div class="beneficiosMetade2">
                     <p>Navegue com conforto e segurança</p>
@@ -238,7 +211,7 @@
                         <h4>Preço</h4>
                     </div>
                     <div class="pEscolhaMetade3" id="preco">
-                        Não definido
+                        R$
                     </div>
                 </div>
             </div>
@@ -293,11 +266,11 @@
                 </div>
             </div>
        </div>
+
     </div>
-    <div class="barra_branca"></div>
     <div class="rodape">
-        <table width="100%">
-            <tr>
+        <table width="100%" >
+            <tr height = "100%">
                 <td width="25%">
                     <div>
                         <p class="titulo1">Virtual Cine</p>
@@ -309,59 +282,62 @@
                         </ul>
                     </div>
                 </td>
-                <td width="25%" align="center">
+                <td width="25%">
                     <div>
-                        <p class="titulo2">Baixar aplicativo</p>
+                        <p class="titulo2">Aplicativo</p>
                         <ul class="footer-menu">
-                            <li>
+                            <li> 
                                 <a href="#">
-                                    <img src="../img/google-play.png" alt="" width="50%">
+                                <img src="../img/google-play.png" alt="" width="50%">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../img/apple-store.png" alt="" width=55%">
+                                    <img src="../img/apple-store.png" alt="" width="50%">
                                 </a>
                             </li>
+                            
                         </ul>
                     </div>
                 </td>
                 <td width="25%">
-                    <div class="social-list">
-                        <p class="titulo3">Rede Sociais</p>
-                        <ul class="footer-menu">
-                        <a href="#" class="social-item">
-                            <i class="bx bxl-facebook"></i>
-                        </a>
-                        <a href="#" class="social-item">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                        <a href="#" class="social-item">
-                            <i class="bx bxl-instagram"></i>
-                        </a>
-                    </ul>
-                    </div>
+                    
+                        <div class="social-list">
+                            <p class="titulo3">Rede Sociais</p>
+                            <ul class="footer-menu">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </ul>
+                        </div>
+
+                        
+                    
                 </td>
                 <td width="25%">
-                    <p class="titulo4">Políticas</p>
-                    <ul class="footer-menu">
-                        <li><a href="#" class="txtRodape">Prevenções</a></li>
+                    <div>
+                        <p class="titulo1">Políticas</p>
+                        <ul class="footer-menu">
+                            <li><a href="#" class="txtRodape">Prevenções</a></li>
                         <li><a href="#" class="txtRodape">Privacidade e Segurança</a></li>
                         <li><a href="#" class="txtRodape">Trocas e Cancelamentos</a></li>
                         <li><a href="#" class="txtRodape">Termos de Uso</a></li>
-                    </ul>
+                        </ul>
+                    </div>
                 </td>
             </tr>
         </table>
     </div>
     <div class="rodapeFinal">Virtual Cine 2023 - Site de filmes 3D</div>
+    
+    
 </body>
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../jquery-3.6.4.min.js"></script>
-    <!-- BOOTSTRAP -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <!-- APP SCRIPT -->
     <script src="novaTelaInicial.js"> </script>
 </html>
