@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Form de Registro com validações em JS</title>
   <link rel="stylesheet" href="cadastro.css">
-  <link rel="stylesheet" href="../loading/loading.css">
 </head>
 <body>
-  <div id="preloader">
-    <div class="inner">
-        <img src="../img/Logo.png" alt="" >
-       <div class="bolas">
-          <div></div>
-          <div></div>
-          <div></div>                    
-       </div>
-    </div>
-</div>
   <div id="main-container">
     <h1>Cadastre-se para acessar o sistema</h1>
     <form id="register-form" action="cadastro.php" method="post">
@@ -55,11 +44,10 @@
       </div>
 
       <div class="full-box">
-        <input id="btn-submit" type="submit" value="Registrar">
+        <input id="btn-submit" type="submit" value="Registrar" onclick="window.location='../telaInicial/novaTelaInicial';">
       </div>
     </form>
     <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
-    </div>
   </div>
 
   
@@ -75,8 +63,6 @@
     // }
 
   </script>
-  <script src="../jquery-3.6.4.min.js"></script>
-  <script src="../loading/loading.js"></script>
 </body>
 
 </html>
