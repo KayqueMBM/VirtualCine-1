@@ -55,6 +55,7 @@ input {
 label {  /* formatação etiqueta */
   font-weight: bold;
   font-size: .8rem;
+  font-family: "Cairo", sans-serif;
 }
 
 input {  /*linha do email e da senha */

@@ -8,22 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Estilos -->
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="../loading/loading.css">
     <title>Login</title>
     
 </head>
 <script language="JavaScript" src="login.js"></script>
 <body>
-  <div id="preloader">
-    <div class="inner">
-        <img src="../img/Logo.png" alt="" >
-       <div class="bolas">
-          <div></div>
-          <div></div>
-          <div></div>                    
-       </div>
-    </div>
-</div>
     <!-- Caixa de fundo -->
     <div class="caixa-principal">
         <div id="login">
@@ -33,19 +22,19 @@
                 </div>
                 <div class="card-content">
                     <div class="card-content-area">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" id="usuario" autocomplete="off">
+                        <label for="usuario">Email</label>
+                        <input type="text" id="email"  name="email" autocomplete="off">
                     </div>
                     <div class="card-content-area">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" autocomplete="off">
+                        <input type="password" id="senha" name="senha" autocomplete="off">
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-                    <input type="submit" value="Entrar" class="submit" onclick="Login()">
+                    <a href="../recuperacao/recuperação.html" class="recuperar_senha">Esqueceu a senha?</a>
+                    <input type="submit" value="entrar" name="entrar" class="submit" onclick="Login()">
                     <br>
-                    <a href="../telaInicial/novaTelaInicial.html" class="voltar">VOLTAR</a>
+                    <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
                 </div>
             </form>
         </div>
@@ -80,6 +69,4 @@
 
       
 </script>
-<script src="../jquery-3.6.4.min.js"></script>
-<script src="../loading/loading.js"> </script>
 </html>
