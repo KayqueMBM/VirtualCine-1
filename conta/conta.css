@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-*{
-    font-family: "Cairo", sans-serif;
-}
 
 body,html {
     margin: 0;
@@ -54,7 +51,9 @@ body,html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #161A1D;
+    background-color: black;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
 }
 
 .botoes{
@@ -65,10 +64,14 @@ body,html {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
 }
 
-.quadPlanos,.quadConta,.quadFaleConosco,.quadSeguranca,.quadTermosUso{
+.botoes:hover,
+.botoes:focus {
+    background: #0496ff;
+  }
+
+.quadInformações,.quadDados,.quadPersonalizar,.quadIdioma{
     display: none;
     align-items: center;
     justify-content: center;
@@ -83,30 +86,26 @@ body,html {
 }
 
 
-.quadPlanos{
-    background-color: #dad7cd;
+.quadInformações{
+    background-color: red;
 }
 
-.quadConta{
-    background-color: #a3b18a;
+.quadDados{
+    background-color: blue;
 }
 
-.quadFaleConosco{
-    background-color: #588157;
+.quadPersonalizar{
+    background-color: #161A1D;
 }
 
-.quadSeguranca{
-    background-color: #3a5a40;
-}
-
-.quadTermosUso{
-    background-color: #344e41;
+.quadIdioma{
+    background-color: #161A1D;
 }
 
 /* - Texto VIRTUAL CINE - */
 .logoTexto{
     width: 400px;
-    height: 100px;
+    height: 130px;
     color: white;
     font-size:40px;
     font-family: "Cairo", sans-serif;
@@ -120,4 +119,8 @@ body,html {
     transform: scale(1.1);
     transition : 1s;
     cursor: pointer;
+}
+
+.info{
+    background-color: yellow;
 }
