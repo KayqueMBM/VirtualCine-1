@@ -81,13 +81,15 @@ body,html {
 
 .chay{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 120%;
 }
 
 
 .quadInformações{
-    background-color: red;
+    background-color: #dad7cd;
 }
 
 .quadDados{
@@ -95,7 +97,7 @@ body,html {
 }
 
 .quadPersonalizar{
-    background-color: #161A1D;
+    background-color: rebeccapurple;
 }
 
 .quadIdioma{
@@ -121,6 +123,28 @@ body,html {
     cursor: pointer;
 }
 
+.subtitulo{
+    color: #A4161A;
+    font-size: 40px;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao{
+    color: red;
+    font-size: 20px;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .info{
-    background-color: yellow;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
 }
