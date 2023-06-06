@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conta.css">
+    <link rel="stylesheet" href="../loading/loading.css">
+    <title>VIRTUAL CINE</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="inner">
+            <img src="../img/Logo.png" alt="" >
+           <div class="bolas">
+              <div></div>
+              <div></div>
+              <div></div>                    
+           </div>
+        </div>
+    </div>
+    
+    <div class="principal">
+        <div class="logoTexto" onclick="voltar();"><img src="../img/Logo.png" alt="" height="50%"></div>
+        <div class="menu">
+            <div class="botoes" onclick="mudarConfiguracao('planos')">Informações pessoais</div>
+            <div class="botoes" onclick="mudarConfiguracao('conta')">Dados e privacidade</div>
+            <div class="botoes" onclick="mudarConfiguracao('fale')">Personalizar e adicionar conta</div>
+            <div class="botoes" onclick="mudarConfiguracao('seguranca')">Idioma</div>
+        </div>
+        <div class="chay">
+            <div class="quadPlanos" id="planos">    
+
+            </div>
+            <div class="quadConta" id="conta">     
+
+            </div>
+            <div class="quadFaleConosco" id="fale">      
+
+            </div>
+            <div class="quadSeguranca" id="seguranca"> 
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="conta.js"></script>
+<script src="../jquery-3.6.4.min.js"></script>
+<script src="../loading/loading.js"></script>
+</html>

@@ -62,8 +62,9 @@ body,html {
     font-weight: 700;
 }
 
-.logoTexto:hover{
-    font-size:41px;
+.logoTexto:hover, .logoTexto img{
+    transform: scale(1.1);
+    transition : 1s;
     cursor: pointer;
 }
 

@@ -127,7 +127,7 @@ body{
     width: 25%;
     height: 55%;
     display: flex;
-    background-color: #bb3e03;
+    background-color: #a4161a;
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -138,7 +138,7 @@ body{
     cursor:pointer;
     transition: .1s;
     text-shadow: 1px 1px 3px #0B090A;
-    border-bottom: 5px solid #A4161A; 
+    border-bottom: 5px solid #660708; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +151,7 @@ body{
 }
 
 .botoesDivDivisoria:hover{
-    border-bottom: 10px solid #A4161A; 
+    border-bottom: 10px solid #660708; 
 }
 
 .fundoGradiente{

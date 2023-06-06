@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+
+*{
+    font-family: "Cairo", sans-serif;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #161A1D;
+   
+}
+
+/* - Fundo principal - */
+.principal {
+    
+    width: 100%;
+    height:100vh;
+    
+    background-color: #161A1D;
+}
+
+.menu{
+    width: 100%;
+    height: 12.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161A1D;
+}
+
+.botoes{
+  
+    height: 100%;
+    width: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.quadPlanos,.quadConta,.quadFaleConosco,.quadSeguranca,.quadTermosUso{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.chay{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+.quadPlanos{
+    background-color: #dad7cd;
+}
+
+.quadConta{
+    background-color: #a3b18a;
+}
+
+.quadFaleConosco{
+    background-color: #588157;
+}
+
+.quadSeguranca{
+    background-color: #3a5a40;
+}
+
+.quadTermosUso{
+    background-color: #344e41;
+}
+
+/* - Texto VIRTUAL CINE - */
+.logoTexto{
+    width: 400px;
+    height: 100px;
+    color: white;
+    font-size:40px;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.logoTexto:hover, .logoTexto img{
+    transform: scale(1.1);
+    transition : 1s;
+    cursor: pointer;
+}
