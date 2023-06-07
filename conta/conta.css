@@ -93,7 +93,7 @@ body,html {
 }
 
 .quadDados{
-    background-color: blue;
+    background-color: #dad7cd;
 }
 
 .quadPersonalizar{
@@ -132,19 +132,16 @@ body,html {
     justify-content: center;
 }
 
-.descricao{
-    color: red;
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .info{
     width: 100%;
     background-color: white;
     color: black;
     font-family: "Cairo", sans-serif;
     text-align: center;
+    cursor: pointer;
 }
+
+.info:hover,
+.info:focus {
+    background: #ced4da;
+  }
