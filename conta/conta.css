@@ -79,6 +79,11 @@ body,html {
     height: 100%;
 }
 
+.quadIdioma{
+    align-items: baseline;
+    justify-content: baseline;
+}
+
 .chay{
     display: flex;
     align-items: center;
@@ -144,4 +149,179 @@ body,html {
 .info:hover,
 .info:focus {
     background: #ced4da;
+  }
+
+  .card {
+    background-color: #457b9d;
+    transition: 0.3s;
+    width: 285px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 green;
+  }
+  
+  .container {
+    padding: 2px 16px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select_idioma{
+    background-color: beige;
+    height: 50px;
+    font-family: "Cairo", sans-serif;
+    font-size: 900;
+    cursor: pointer;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select_idioma:hover,
+  .select_idioma:focus {
+    background: #4ea8de;
+  }
+
+  .card2 {
+    background-color: #457b9d;
+    transition: 0.3s;
+    width: 285px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border: 2px solid black;
+    margin-left: 5%;
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 red;
+  }
+  
+  .container2 {
+    padding: 2px 16px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select_idioma2{
+    background-color: beige;
+    height: 50px;
+    font-family: "Cairo", sans-serif;
+    font-size: 900;
+    cursor: pointer;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select_idioma2:hover,
+  .select_idioma2:focus {
+    background: #4ea8de;
+  }
+
+  .card3 {
+    background-color: #457b9d;
+    transition: 0.3s;
+    width: 285px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border: 2px solid black;
+    margin-left: 5%;
+  }
+  
+  .card3:hover {
+    box-shadow: 0 8px 16px 0 blue;
+  }
+  
+  .container3 {
+    padding: 2px 16px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select_idioma3{
+    background-color: beige;
+    height: 50px;
+    font-family: "Cairo", sans-serif;
+    font-size: 900;
+    cursor: pointer;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select_idioma3:hover,
+  .select_idioma3:focus {
+    background: #4ea8de;
+  }
+
+  .card4 {
+    background-color: #457b9d;
+    transition: 0.3s;
+    width: 285px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border: 2px solid black;
+    margin-left: 5%;
+  }
+  
+  .card4:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  
+  .container4 {
+    padding: 2px 16px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select_idioma4{
+    background-color: beige;
+    height: 50px;
+    font-family: "Cairo", sans-serif;
+    font-size: 900;
+    cursor: pointer;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select_idioma4:hover,
+  .select_idioma4:focus {
+    background: #4ea8de;
   }
