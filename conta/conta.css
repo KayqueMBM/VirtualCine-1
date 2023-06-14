@@ -159,7 +159,7 @@ body,html {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 3%;
   }
   
   .card:hover {
@@ -178,12 +178,12 @@ body,html {
   }
   
   .select_idioma{
-    background-color: beige;
+    background-color: #8ac926;
     height: 50px;
     font-family: "Cairo", sans-serif;
-    font-size: 900;
+    font-size: 20px;
     cursor: pointer;
-    color: #343a40;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,7 @@ body,html {
     flex-direction: column;
     margin-top: 5%;
     border: 2px solid black;
-    margin-left: 5%;
+    margin-left: 3%;
   }
   
   .card2:hover {
@@ -225,7 +225,7 @@ body,html {
     background-color: beige;
     height: 50px;
     font-family: "Cairo", sans-serif;
-    font-size: 900;
+    font-size: 20px;
     cursor: pointer;
     color: #343a40;
     display: flex;
@@ -247,7 +247,7 @@ body,html {
     flex-direction: column;
     margin-top: 5%;
     border: 2px solid black;
-    margin-left: 5%;
+    margin-left: 3%;
   }
   
   .card3:hover {
@@ -269,7 +269,7 @@ body,html {
     background-color: beige;
     height: 50px;
     font-family: "Cairo", sans-serif;
-    font-size: 900;
+    font-size: 20px;
     cursor: pointer;
     color: #343a40;
     display: flex;
@@ -291,7 +291,7 @@ body,html {
     flex-direction: column;
     margin-top: 5%;
     border: 2px solid black;
-    margin-left: 5%;
+    margin-left: 3%;
   }
   
   .card4:hover {
@@ -313,7 +313,7 @@ body,html {
     background-color: beige;
     height: 50px;
     font-family: "Cairo", sans-serif;
-    font-size: 900;
+    font-size: 20px;
     cursor: pointer;
     color: #343a40;
     display: flex;
