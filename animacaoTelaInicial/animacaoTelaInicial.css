@@ -65,7 +65,5 @@ body {
 
 .quad2{
     z-index: -1;
-    background-color: white;
-    border-bottom: 5px solid white;
-    
+    background-color: #8ecae6;
 }
