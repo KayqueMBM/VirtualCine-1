@@ -677,60 +677,59 @@ h3{
     }
   }
 
-  /* O interruptor - a caixa ao redor do controle deslizante */
-.switch {
-    display: block;
-    --width-of-switch: 3.5em;
-    --height-of-switch: 2em;
-    --size-of-icon: 1.4em;
-    --slider-offset: 0.3em;
+  .button {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 0px 15px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    color: white;
+    border: none;
     position: relative;
-    width: var(--width-of-switch);
-    height: var(--height-of-switch);
-  }
-  
-  /* Ocultar caixa de seleção HTML padrão */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #f4f4f5;
-    transition: .4s;
-    border-radius: 30px;
+    transition-duration: .2s;
+  }
+
+  .button:hover {
+    background-color: rgb(77, 77, 77);
+    transition-duration: .2s;
   }
   
-  .slider:before {
+  .bell {
+    width: 15px;
+    fill: #A4161A;
+  }
+  
+  .arrow {
     position: absolute;
-    content: "";
-    height: var(--size-of-icon,1.4em);
-    width: var(--size-of-icon,1.4em);
-    border-radius: 20px;
-    left: var(--slider-offset,0.3em);
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
-    ;
-   transition: .4s;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  input:checked + .slider {
-    background-color: #303136;
+  .button:hover .arrow {
+    animation: slide-right .4s ease-out both;
   }
+
+  /* animação de seta */
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
   
-  input:checked + .slider:before {
-    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
-    background: #303136;
-    /* altere o valor da segunda inserção na sombra da caixa para alterar o ângulo e a direção da lua  */
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   .rodapeFinal {
